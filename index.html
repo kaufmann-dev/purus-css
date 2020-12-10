@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amogus.css</title>
+    <link rel="icon" href="media/amogus.ico">
+    <link rel="apple-touch-icon" href="media/amogus.ico">
+    <link rel="stylesheet" type="text/css" href="css/amogus.min.css">
+  </head>
+  <body>
+    <div class="container fill-vertical-space">
+      <header class="center">
+        <h1><img src="media/amogus.png"></h1>
+        <h1>Amogus.css</h1>
+        <h3>Minimalist CSS framework</h3>
+        <p>
+          No JavaScript. Raw CSS.<br>
+          <small>8.8 kB minified</small>
+        </p>
+      </header>
+      <div class="center">
+        <a href="https://github.com/sus-amogus/sus-amogus.github.io/archive/refs/heads/main.zip"><button class="mb">Download</button></a>
+        <a href="https://github.com/sus-amogus/sus-amogus.github.io"><button class="mb">GitHub</button></a>
+        <nav>
+          <ul>
+            <li><a href="amogus.css">Download CSS</a> · <a href="amogus.min.css">Download CSS (minified)</a></li>
+            <li><a href="amogus.drop-in.css">Download drop-in CSS</a> · <a href="amogus.drop-in.min.css">Download drop-in CSS (minified)</a></li>
+            <li><a href="amogus.classes.css">Download CSS classes</a> · <a href="amogus.classes.min.css">Download CSS classes (minified)</a></li>
+            <li><a onload="copyToCliptboard('https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css')">Copy CDN URL</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <h2>Key features</h2>
+        <ul>
+          <li>Developed alongside <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>, which means every normalization is included</li>
+          <li><a href="#">Customize using CSS variables</a></li>
+          <li>Responsive and mobile-friendly</li>
+          <li>Clean, beautiful typography</li>
+          <li>Forms, tables, buttons and navigation</li>
+        </ul>
+        <h2>Classes</h2>
+        <ul>
+          <li><code>.container</code> · Responsive fixed width container.</li>
+          <li><code>.container-fluid</code> · Full width container.</li>
+          <li><code>.fill-vertical-space</code> · Make an element fill out remaining vertical space.</li>
+          <li><code>.center</code> · Center the children of an element.</li>
+          <li><a href="https://sus-amogus.github.io">Padding and margin classes</a> · Amogus.css includes a few different classes for margin and padding.</li>
+        </ul>
+        <h2>Example site</h2>
+        Check out the example website <a href="explore.html">here</a>!
+      </div>
+    </div>
+    <footer>
+      <p>View this project on <a href="https://github.com/sus-amogus/sus-amogus.github.io">GitHub</a> · <a href="LICENSE">License</a></p>
+    </footer>
+
+    <script>
+    const copyToClipboard = str => {
+      const el = document.createElement('textarea');
+      el.value = str;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+    };
+    </script>
+  </body>
+</html>
