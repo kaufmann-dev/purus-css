@@ -202,24 +202,18 @@ p q r s t u v w x y z { | } ~ </pre>
             <h2>Images</h2>
             <div>
               <h3>No <code>&lt;figure&gt;</code> element</h3>
-              <p><a href="https://commons.wikimedia.org/wiki/File:Colouring_pencils.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Colouring_pencils.jpg/1280px-Colouring_pencils.jpg" alt="Colouring pencils by MichaelMaggs"></a></p>              
+              <img src="media/1280px-Colouring_pencils.jpg" alt="Colouring pencils by MichaelMaggs">              
               
               <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
-              <figure><a href="https://commons.wikimedia.org/wiki/File:Coloured,_textured_craft_card_edit.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coloured%2C_textured_craft_card_edit.jpg/1280px-Coloured%2C_textured_craft_card_edit.jpg" alt="Coloured, textured craft card by MichaelMaggs"></a></figure>
+              <figure>
+                <img src="media/1280px-Coloured,_textured_craft_card_edit.jpg" alt="Coloured, textured craft card by MichaelMaggs">
+              </figure>
               
               <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
               <figure>
-                <a href="https://commons.wikimedia.org/wiki/File:Opening_chess_position_from_black_side.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Opening_chess_position_from_black_side.jpg/1280px-Opening_chess_position_from_black_side.jpg" alt="Opening chess position from black side by MichaelMaggs"></a>
+                <img src="media/1280px-Opening_chess_position_from_black_side.jpg" alt="Opening chess position from black side by MichaelMaggs">
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
-
-              <cite>
-                Images:
-                <ul>
-                  <li><a href="https://commons.wikimedia.org/wiki/User:Alvesgaspar">Alvesgaspar</a></li>
-                  <li><a href="https://commons.wikimedia.org/wiki/User:MichaelMaggs">MichaelMaggs</a></li>
-                </ul>
-              </cite>
             </div>
             
           </article>
@@ -227,8 +221,9 @@ p q r s t u v w x y z { | } ~ </pre>
             <h2>Audio</h2>
             <div>
               <audio controls>
-                <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3">
+                <source src="media/bensound-sunny.mp3">
               </audio>
+              <br>
               <cite>Music: <a href="https://www.bensound.com">https://www.bensound.com</a></cite>
             </div>
             
@@ -237,10 +232,9 @@ p q r s t u v w x y z { | } ~ </pre>
             <h2>Video</h2>
             <div>
               <video controls>
-                <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
+                <source src="media/stock.mp4" type="video/mp4">
                 Your browser does not support video/mp4.
               </video>
-              <cite>Video: <a href="https://www.blender.org/">Blender Foundation</a></cite>
             </div>
             
           </article>
