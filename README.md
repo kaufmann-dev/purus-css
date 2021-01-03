@@ -5,41 +5,41 @@ No JavaScript. Raw CSS.
 ```
 
 ## Get Started
-[Download](https://github.com/sus-amogus/sus-amogus.github.io/archive/refs/heads/main.zip)
+[Download](https://github.com/sus-amogus/amogus.css/archive/refs/heads/main.zip)
 
-[Download CSS](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.css)
+[Download CSS](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.css)
 
-[Download CSS (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.min.css)
+[Download CSS (minified)](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.min.css)
 
-[Download drop-in CSS](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.drop-in.css)
+[Download drop-in CSS](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.drop-in.css)
 
-[Download drop-in CSS (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.drop-in.min.css)
+[Download drop-in CSS (minified)](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.drop-in.min.css)
 
-[Download CSS classes](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.classes.css)
+[Download CSS classes](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.classes.css)
 
-[Download CSS classes (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.classes.min.css)
+[Download CSS classes (minified)](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.classes.min.css)
 
 ### JSDelivr CDN
-* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.min.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.min.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css
 
 ### `script` with JSDelivr CDN
 ```HTML
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.min.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.min.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css"></script>
 ```
 
-## [Website](https://sus-amogus.github.io/index.html)
+## [Website](https://css.amogus.top)
 
-## [Demo](https://sus-amogus.github.io/demo.html)
+## [Demo](https://css.amogus.top/demo.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
@@ -72,8 +72,8 @@ As of version 1.0, the following predefined variables exist:
 |blue|var(--blue)|#4285f4|
 |darker-blue|var(--darker-blue)|#3c78dc|
 |darkest-blue|var(--darkest-blue)|#2766cf|
-|default-padding|var(--default-padding)|5px|
-|default-margin|var(--default-margin)|5px|
+|default-padding|var(--default-padding)|10px|
+|default-margin|var(--default-margin)|10px|
 
 
 As an example, let's try to override white with `#fff`:
@@ -105,3 +105,5 @@ Calling `var(--white)` will now return the value `#fff`.
 .rm-p { padding: 0; }
 .rm-m { margin: 0; }
 ```
+
+## To be updated
