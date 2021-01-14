@@ -261,27 +261,3 @@ As an example, let's try to override white with `#fff`:
 }
 ```
 Calling `var(--white)` will now return the value `#fff`.
-
-## Padding and margin classes
-```CSS
-.p {  padding: var(--default-padding); }
-.px { padding-left: var(--default-padding); padding-right: var(--default-padding); }
-.py { padding-top: var(--default-padding); padding-bottom: var(--default-padding); }
-.pl { padding-left: var(--default-padding); }
-.pr { padding-right: var(--default-padding); }
-.pt { padding-top: var(--default-padding); }
-.pb { padding-bottom: var(--default-padding); }
-
-.m {  margin: var(--default-margin); }
-.mx { margin-left: var(--default-margin); margin-right: var(--default-margin); }
-.my { margin-top: var(--default-margin); margin-bottom: var(--default-margin); }
-.ml { margin-left: var(--default-margin); }
-.mr { margin-right: var(--default-margin); }
-.mt { margin-top: var(--default-margin); }
-.mb { margin-bottom: var(--default-margin); }
-
-.rm-p { padding: 0; }
-.rm-m { margin: 0; }
-```
-
-## To be updated
