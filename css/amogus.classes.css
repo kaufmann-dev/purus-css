@@ -1,0 +1,40 @@
+div.container{
+    width:100%;
+    display:block;
+    margin:0 auto;
+    max-width:768px;
+    padding:0 16px 16px
+}
+div.container-fluid{
+    width:100%;
+    display:block;
+    margin:0 auto;
+    padding:0 16px 16px
+}
+
+div.fill-vertical-space {
+    flex: 1 0 auto;
+}
+
+.center {
+    text-align:center;
+}
+
+.p {  padding: var(--default-padding); }
+.px { padding-left: var(--default-padding); padding-right: var(--default-padding); }
+.py { padding-top: var(--default-padding); padding-bottom: var(--default-padding); }
+.pl { padding-left: var(--default-padding); }
+.pr { padding-right: var(--default-padding); }
+.pt { padding-top: var(--default-padding); }
+.pb { padding-bottom: var(--default-padding); }
+
+.m {  margin: var(--default-margin); }
+.mx { margin-left: var(--default-margin); margin-right: var(--default-margin); }
+.my { margin-top: var(--default-margin); margin-bottom: var(--default-margin); }
+.ml { margin-left: var(--default-margin); }
+.mr { margin-right: var(--default-margin); }
+.mt { margin-top: var(--default-margin); }
+.mb { margin-bottom: var(--default-margin); }
+
+.rm-p { padding: 0; }
+.rm-m { margin: 0; }
