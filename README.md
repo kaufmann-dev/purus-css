@@ -250,8 +250,10 @@ As of version 1.0, the following predefined variables exist:
 |blue|var(--blue)|#4285f4|
 |darker-blue|var(--darker-blue)|#3c78dc|
 |darkest-blue|var(--darkest-blue)|#2766cf|
-|default-padding|var(--default-padding)|10px|
-|default-margin|var(--default-margin)|10px|
+|padding|var(--padding)|5px|
+|margin|var(--margin)|5px|
+|padding-lg|var(--padding-lg)|10px|
+|margin-lg|var(--margin-lg)|10px|
 
 
 As an example, let's try to override white with `#fff`:
