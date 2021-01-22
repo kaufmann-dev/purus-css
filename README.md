@@ -27,14 +27,14 @@ No JavaScript. Raw CSS.
 * https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css
 * https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css
 
-### `script` with JSDelivr CDN
+### `link` with JSDelivr CDN
 ```HTML
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.min.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.min.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css"></script>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css">
 ```
 
 ## [Website](https://css.amogus.top)
