@@ -9,10 +9,10 @@
     --darker-white: #eee;
     --darkest-white: #e9e9e9;
     --black: #121212;
-    --faded-blue: #5c95f4;
-    --blue: #4285f4;
-    --darker-blue: #3c78dc;
-    --darkest-blue: #2766cf;
+    --faded-primary: #5c95f4;
+    --primary: #4285f4;
+    --darker-primary: #3c78dc;
+    --darkest-primary: #2766cf;
     --padding: 5px;
     --margin: 5px;
     --padding-lg: 10px;
@@ -327,7 +327,7 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
-    background-color: var(--blue);
+    background-color: var(--primary);
     border-radius: 4px;
     cursor: pointer;
     color:var(--white);
@@ -359,13 +359,13 @@ button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-    background-color: var(--darker-blue);
+    background-color: var(--darker-primary);
 }
 button:not(:disabled):active,
 input[type=button]:not(:disabled):active,
 input[type=reset]:not(:disabled):active,
 input[type=submit]:not(:disabled):active {
-    background-color: var(--darkest-blue);
+    background-color: var(--darkest-primary);
 }
 button:focus,
 input[type=button]:focus,
@@ -381,7 +381,7 @@ input[type=reset]:disabled,
 input[type=submit]:disabled {
     opacity: .65;
     cursor: not-allowed;
-    background-color: var(--faded-blue);
+    background-color: var(--faded-primary);
 }
 /* NORMALIZE.CSS */
 abbr[title] {

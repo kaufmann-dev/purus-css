@@ -246,10 +246,10 @@ As of version 1.0, the following predefined variables exist:
 |darker-white|var(--darker-white)|#eee|
 |darkest-white|var(--darkest-white)|#e9e9e9|
 |black|var(--black)|#121212|
-|faded-blue|var(--faded-blue)|#5c95f4|
-|blue|var(--blue)|#4285f4|
-|darker-blue|var(--darker-blue)|#3c78dc|
-|darkest-blue|var(--darkest-blue)|#2766cf|
+|faded-primary|var(--faded-primary)|#5c95f4|
+|primary|var(--primary)|#4285f4|
+|darker-primary|var(--darker-primary)|#3c78dc|
+|darkest-primary|var(--darkest-primary)|#2766cf|
 |padding|var(--padding)|5px|
 |margin|var(--margin)|5px|
 |padding-lg|var(--padding-lg)|10px|
