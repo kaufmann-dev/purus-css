@@ -37,9 +37,9 @@ No JavaScript. Raw CSS.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css">
 ```
 
-## [Website](https://css.amogus.top)
+## [Website](https://sus-amogus.github.io/amogus.css/)
 
-## [Demo](https://css.amogus.top/demo.html)
+## [Demo](https://sus-amogus.github.io/amogus.css/demo.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
