@@ -5,25 +5,30 @@ No JavaScript. Raw CSS.
 ```
 
 ## Get Started
-[Download]()
+[Download](https://github.com/sus-amogus/sus-amogus.github.io/archive/refs/heads/main.zip)
 
-[Download CSS]()
+[Download CSS](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.css)
 
-[Download CSS (minified)]()
+[Download CSS (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.min.css)
 
-[Download drop-in CSS]()
+[Download drop-in CSS](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.drop-in.css)
 
-[Download drop-in CSS (minified)]()
+[Download drop-in CSS (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.drop-in.min.css)
 
-[Download CSS classes]()
+[Download CSS classes](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.classes.css)
 
-[Download CSS classes (minified)]()
+[Download CSS classes (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.classes.min.css)
 
-[Copy CDN script tag]()
+### CDN URL
+```
+https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css
+```
+### Script tag with CDN
+```HTML
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css"></src>
+```
 
-[Copy CDN URL]()
-
-## [Demo](http://codepen.io/mblode/details/JdYbJj)
+## [Demo](https://sus-amogus.github.io/demo.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
@@ -33,11 +38,11 @@ No JavaScript. Raw CSS.
 * Forms, tables, buttons and navigation
 
 ## Classes
-* `.container` · Responsive fixed width container.
-* `.container-fluid` · Full width container.
-* `.fill-vertical-space` · Make an element fill out remaining vertical space.
-* `.center` · Center the children of an element.
-* Padding and margin classes · Amogus.css includes a few different classes for margin and padding.
+* `.container`: Responsive fixed width container.
+* `.container-fluid`: Full width container.
+* `.fill-vertical-space`: Make an element fill out remaining vertical space.
+* `.center`: Center the children of an element.
+* **Padding and margin classes**: Amogus.css includes a few different classes for margin and padding.
 
 ## Customize using CSS variables
 In Amogus.css, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Amogus.css!**
