@@ -28,6 +28,8 @@ https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css
 <script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css"></src>
 ```
 
+## [Website](https://sus-amogus.github.io/index.html)
+
 ## [Demo](https://sus-amogus.github.io/demo.html)
 
 ## Key features
