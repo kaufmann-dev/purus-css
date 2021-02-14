@@ -70,9 +70,8 @@ No JavaScript. Raw CSS.
 .w-100     { width: 100%; }
 .w-auto    { width: auto; }
 .w-content { width: fit-content; }
-
-
-### Padding and margin
+```
+### Paddind and margin
 ```CSS
 .p        { padding: var(--padding); }
 .px       { padding-left: var(--padding); padding-right: var(--padding); }
