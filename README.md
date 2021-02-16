@@ -118,28 +118,28 @@ No JavaScript. Raw CSS.
 
 ### Color and background color
 ```CSS
-.bg-border-grey { background-color: var(--border-grey); }
-.bg-text-grey { background-color: var(--text-grey); }
-.bg-lighter-white { background-color: var(--lighter-white); }
-.bg-white { background-color: var(--white); }
-.bg-darker-white { background-color: var(--darker-white); }
-.bg-darkest-white { background-color: var(--darkest-white); }
-.bg-black { background-color: var(--black); }
-.bg-faded-primary { background-color: var(--faded-primary); }
-.bg-primary { background-color: var(--primary); }
-.bg-darker-primary { background-color: var(--darker-primary); }
-.bg-darkest-primary { background-color: var(--darkest-primary); }
+.bg-border-grey        { background-color: var(--border-grey); }
+.bg-text-grey          { background-color: var(--text-grey); }
+.bg-lighter-white      { background-color: var(--lighter-white); }
+.bg-white              { background-color: var(--white); }
+.bg-darker-white       { background-color: var(--darker-white); }
+.bg-darkest-white      { background-color: var(--darkest-white); }
+.bg-black              { background-color: var(--black); }
+.bg-faded-primary      { background-color: var(--faded-primary); }
+.bg-primary            { background-color: var(--primary); }
+.bg-darker-primary     { background-color: var(--darker-primary); }
+.bg-darkest-primary    { background-color: var(--darkest-primary); }
 
-.color-border-grey { color: var(--border-grey); }
-.color-text-grey { color: var(--text-grey); }
-.color-lighter-white { color: var(--lighter-white); }
-.color-white { color: var(--white); }
-.color-darker-white { color: var(--darker-white); }
-.color-darkest-white { color: var(--darkest-white); }
-.color-black { color: var(--black); }
-.color-faded-primary { color: var(--faded-primary); }
-.color-primary { color: var(--primary); }
-.color-darker-primary { color: var(--darker-primary); }
+.color-border-grey     { color: var(--border-grey); }
+.color-text-grey       { color: var(--text-grey); }
+.color-lighter-white   { color: var(--lighter-white); }
+.color-white           { color: var(--white); }
+.color-darker-white    { color: var(--darker-white); }
+.color-darkest-white   { color: var(--darkest-white); }
+.color-black           { color: var(--black); }
+.color-faded-primary   { color: var(--faded-primary); }
+.color-primary         { color: var(--primary); }
+.color-darker-primary  { color: var(--darker-primary); }
 .color-darkest-primary { color: var(--darkest-primary); }
 ```
 
