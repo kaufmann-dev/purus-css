@@ -19,13 +19,25 @@ No JavaScript. Raw CSS.
 
 [Download CSS classes (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.classes.min.css)
 
-### CDN URL
-```
-https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css
-```
-### Script tag with CDN
+### JSDelivr CDN
+* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css`
+
+
+* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css`
+* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css`
+* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css`
+* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css`
+* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css`
+
+### `script` with JSDelivr CDN
 ```HTML
 <script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css"></src>
+
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css"></src>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css"></src>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css"></src>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css"></src>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css"></src>
 ```
 
 ## [Website](https://sus-amogus.github.io/index.html)
@@ -49,19 +61,23 @@ https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css
 ## Customize using CSS variables
 In Amogus.css, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Amogus.css!**
 As of version 1.0, the following predefined variables exist:
-* border-grey: #d1d1d1
-* text-grey: #7d7d7d
-* lighter-white: #f7f7f7
-* white: #f3f3f3
-* darker-white: #eee
-* darkest-white: #e9e9e9
-* black: #121212
-* faded-blue: #5c95f4
-* blue: #4285f4
-* darker-blue: #3c78dc
-* darkest-blue: #2766cf
-* default-padding: 5px
-* default-margin: 5px
+
+| Name | CSS Name | Value |
+|:---|:---|:---|
+|border-grey|var(--border-grey)|#d1d1d1|
+|text-grey|var(--text-grey)|#7d7d7d|
+|lighter-white|var(--lighter-white)|#f7f7f7|
+|white|var(--white)|#f3f3f3|
+|darker-white|var(--darker-white)|#eee|
+|darkest-white|var(--darkest-white)|#e9e9e9|
+|black|var(--black)|#121212|
+|faded-blue|var(--faded-blue)|#5c95f4|
+|blue|var(--blue)|#4285f4|
+|darker-blue|var(--darker-blue)|#3c78dc|
+|darkest-blue|var(--darkest-blue)|#2766cf|
+|default-padding|var(--default-padding)|5px|
+|default-margin|var(--default-margin)|5px|
+
 
 As an example, let's try to override white with `#fff`:
 ```CSS
@@ -69,6 +85,7 @@ As an example, let's try to override white with `#fff`:
     --white: #fff;
 }
 ```
+Calling `var(--white)` will now return the value `#fff`.
 
 ## Padding and margin classes
 ```CSS
