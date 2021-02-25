@@ -37,11 +37,11 @@ No JavaScript. Raw CSS.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/PurusCss/css/purus.classes.min.css">
 ```
 
-## [Website](https://puruscss.kaufmann.dev/purus.css/)
+## [Website](https://puruscss.kaufmann.dev/)
 
 ## Example sites
-* [Demo](https://puruscss.kaufmann.dev/purus.css/examples/demo.html)
-* [Starter site](https://puruscss.kaufmann.dev/purus.css/examples/starter_site.html)
+* [Demo](https://puruscss.kaufmann.dev/examples/demo.html)
+* [Starter site](https://puruscss.kaufmann.dev/examples/starter_site.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
