@@ -20,24 +20,21 @@ No JavaScript. Raw CSS.
 [Download CSS classes (minified)](https://raw.githubusercontent.com/sus-amogus/sus-amogus.github.io/main/css/amogus.classes.min.css)
 
 ### JSDelivr CDN
-* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css`
-
-
-* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css`
-* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css`
-* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css`
-* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css`
-* `https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css`
+* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css
+* https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css
 
 ### `script` with JSDelivr CDN
 ```HTML
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css"></src>
-
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css"></src>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css"></src>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css"></src>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css"></src>
-<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css"></src>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.min.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.drop-in.min.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/sus-amogus/sus-amogus.github.io/css/amogus.classes.min.css"></script>
 ```
 
 ## [Website](https://sus-amogus.github.io/index.html)
