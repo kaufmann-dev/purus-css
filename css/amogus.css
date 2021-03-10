@@ -96,12 +96,14 @@ body {
 .border-left { border-left: 1px solid var(--border-grey); }
 .border-x { border-right: 1px solid var(--border-grey); border-left: 1px solid var(--border-grey); }
 .border-none { border: 0; }
-.outline-none { outline: 0; }
+
 .border-solid { border-style: solid; }
 .border-dashe { border-style: dashed; }
 .border-dotted { border-style: dotted; }
 .border-double { border-style: double; }
 .border-none { border-style: none; }
+
+.outline-none { outline: 0; }
 
 .float-none { float: none; }
 .float-left { float: left; }
@@ -212,11 +214,11 @@ body {
 .d-initial { display: initial; }
 .d-unset { display: unset; }
 
-.p-static { position: static; }
-.p-relative { position: relative; }
-.p-absolute { position: absolute; }
-.p-sticky { position: sticky; }
-.p-fixed { position: fixed; }
+.position-static { position: static; }
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-sticky { position: sticky; }
+.position-fixed { position: fixed; }
 
 .all-0 { left: 0; right: 0; bottom: 0; top: 0; }
 .all-10 { left: 10px; right: 10px; bottom: 10px; top: 10px; }
