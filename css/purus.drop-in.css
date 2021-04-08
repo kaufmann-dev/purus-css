@@ -155,18 +155,18 @@ kbd {
 }
 
 /** 7. Anchor */
-a{
+a {
     color:var(--primary);
     text-decoration:none;
     background-color:transparent;
 }
-a:focus, a:hover{
+a:focus, a:hover {
     color:var(--darker-primary);
     text-decoration:underline;
 }
 
 /** 8. Table */
-table{
+table {
     text-align:left;
     border-collapse:collapse;
     border-spacing:0;
@@ -175,12 +175,12 @@ table{
     width: fit-content;
     background: var(--darker-white);
 }
-table td,table th{
+table td,table th {
     padding:1rem;
     border-bottom:1px solid var(--border-grey);
     border-right:1px solid var(--border-grey);
 }
-table tr:nth-child(2n){
+table tr:nth-child(2n) {
     background-color:var(--darkest-white);
 }
 
@@ -340,7 +340,7 @@ input[type=radio]:focus:invalid:focus {
 input[type=range] {
     display: block;
 }
-input[type=color]{
+input[type=color] {
     border:1px solid rgba(0,0,0,.12);
     border-radius:4px;
     height: 42px;
