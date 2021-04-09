@@ -1,31 +1,33 @@
-/*! DROP-IN CSS */
-/** 1. Variables */
+/*! Variables */
 :root {
-    --border-grey: #d1d1d1;
-    --text-grey: #7d7d7d;
-    --lighter-white: #ffffff;
+    --grey-border: #d1d1d1;
+    --grey-text: #7d7d7d;
+    --white-lighter: #ffffff;
     --white: #f9f9f9;
-    --darker-white: #f3f3f3;
-    --darkest-white: #ededed;
+    --white-darker: #f3f3f3;
+    --white-darkest: #ededed;
     --black: #121212;
-    --faded-primary: #5c95f4;
+    --primary-outline: rgba(0, 123, 255, .35);
+    --primary-faded: #5c95f4;
     --primary: #4285f4;
-    --darker-primary: #3c78dc;
-    --darkest-primary: #2766cf;
+    --primary-darker: #3c78dc;
+    --primary-darkest: #2766cf;
+    --error: #f43022;
     --padding: 5px;
     --margin: 5px;
     --padding-lg: 10px;
     --margin-lg: 10px;
 }
 
-/** 2. Global Resets */
+/*! DROP-IN CSS */
+/** 1. Global Resets */
 *,
 ::before,
 ::after {
     box-sizing: border-box;
 }
 
-/** 3. Base HTML & Body */
+/** 2. Base HTML & Body */
 html {
     height: 100%;
     line-height: 1.5;
@@ -43,7 +45,7 @@ body {
     flex-direction: column;
 }
 
-/** 4. Structural Layout */
+/** 3. Structural Layout */
 nav ul {
     padding: 0;
     margin: 0;
@@ -58,14 +60,14 @@ main {
     display: block;
 }
 footer {
-    border-top: 1px solid var(--border-grey);
+    border-top: 1px solid var(--grey-border);
     text-align: center;
-    background: var(--darkest-white);
+    background: var(--white-darkest);
     overflow: auto;
     flex-shrink: 0;
 }
 
-/** 5. Typography */
+/** 4. Typography */
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -93,22 +95,22 @@ sup {
 blockquote {
     margin: 0 0 1rem;
     padding: 0 1rem;
-    color: var(--text-grey);
-    border-left: 4px solid var(--border-grey);
+    color: var(--grey-text);
+    border-left: 4px solid var(--grey-border);
 }
 summary {
     display: list-item;
 }
 
-/** 6. Code and Preformatted Text */
+/** 5. Code and Preformatted Text */
 code, pre, kbd, samp {
     font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
     font-size: 1em;
 }
 pre, code {
-    background-color: var(--darkest-white);
+    background-color: var(--white-darkest);
     border-radius: 3px;
-    border: 1px solid var(--border-grey);
+    border: 1px solid var(--grey-border);
 }
 pre {
     overflow: auto;
@@ -154,37 +156,37 @@ kbd {
     padding: 5px;
 }
 
-/** 7. Anchor */
+/** 6. Anchor */
 a {
     color:var(--primary);
     text-decoration:none;
     background-color:transparent;
 }
 a:focus, a:hover {
-    color:var(--darker-primary);
+    color:var(--primary-darker);
     text-decoration:underline;
 }
 
-/** 8. Table */
+/** 7. Table */
 table {
     text-align:left;
     border-collapse:collapse;
     border-spacing:0;
     margin:0;
-    border:1px solid var(--border-grey);
+    border:1px solid var(--grey-border);
     width: fit-content;
-    background: var(--darker-white);
+    background: var(--white-darker);
 }
 table td,table th {
     padding:1rem;
-    border-bottom:1px solid var(--border-grey);
-    border-right:1px solid var(--border-grey);
+    border-bottom:1px solid var(--grey-border);
+    border-right:1px solid var(--grey-border);
 }
 table tr:nth-child(2n) {
-    background-color:var(--darkest-white);
+    background-color:var(--white-darkest);
 }
 
-/** 9. Media & Miscellaneous */
+/** 8. Media & Miscellaneous */
 iframe {
     outline: none;
     border: none;
@@ -200,24 +202,24 @@ audio {
     vertical-align: top;
 }
 audio::-webkit-media-controls-panel {
-    background: var(--darkest-white);
+    background: var(--white-darkest);
 }
 hr {
     border: none;
     outline: none;
     height: 1px;
-    background-color: var(--border-grey);
+    background-color: var(--grey-border);
 }
 
-/** 10. Form Elements */
+/** 9. Form Elements */
 /* Labels and Textareas */
 label {
     display: inline-block;
-    line-height: 2
+    line-height: 2;
 }
 textarea {
     overflow: auto;
-    resize: vertical
+    resize: vertical;
 }
 
 /* General Form Control Styling */
@@ -238,7 +240,7 @@ input[type=week],
 select,
 optgroup,
 textarea {
-    background: var(--lighter-white);
+    background: var(--white-lighter);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 4px;
@@ -273,10 +275,10 @@ input[type=week]:focus,
 select:focus,
 optgroup:focus,
 textarea:focus {
-    border-color: #80bdff;
+    border-color: var(--primary-faded);
     outline: 0;
-    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    -webkit-box-shadow: 0 0 0 .2rem var(--primary-outline);
+    box-shadow: 0 0 0 .2rem var(--primary-outline);
 }
 
 input:not([type])[disabled],
@@ -300,21 +302,21 @@ textarea[disabled] {
     background-color: rgba(0, 0, 0, .12);
     color: rgba(0, 0, 0, .54);
     cursor: not-allowed;
-    opacity: 1
+    opacity: 1;
 }
 input[readonly],
 select[readonly],
 optgroup[readonly],
 textarea[readonly] {
     border-color: rgba(0, 0, 0, .12);
-    color: rgba(0, 0, 0, .54)
+    color: rgba(0, 0, 0, .54);
 }
 input:focus:invalid,
 select:focus:invalid,
 optgroup:focus:invalid,
 textarea:focus:invalid {
-    border-color: #ea1c0d;
-    color: #f44336
+    border-color: var(--error);
+    color: var(--error);
 }
 
 /* Checkboxes and Radios */
@@ -323,17 +325,17 @@ input[type=radio] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-    display: inline
+    display: inline;
 }
 input[type=checkbox]:focus,
 input[type=file]:focus,
 input[type=radio]:focus {
-    outline: 1px thin rgba(0, 0, 0, .12)
+    outline: 1px thin rgba(0, 0, 0, .12);
 }
-input[type=checkbox]:focus:invalid:focus,
-input[type=file]:focus:invalid:focus,
-input[type=radio]:focus:invalid:focus {
-    outline-color: #f44336
+input[type=checkbox]:focus:invalid,
+input[type=file]:focus:invalid,
+input[type=radio]:focus:invalid {
+    outline-color: var(--error);
 }
 
 /* Specific Input Types */
@@ -354,7 +356,7 @@ input[type='search'] {
 }
 input[type="color"]::-webkit-color-swatch {
     border-radius: 50px;
-    border: 1px solid var(--border-grey);
+    border: 1px solid var(--grey-border);
 }
 
 /* Browser Overrides */
@@ -390,7 +392,7 @@ input[type=submit] {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid transparent;
     margin: 0;
     font-family: inherit;
     font-size: 1rem;
@@ -398,33 +400,33 @@ input[type=submit] {
     -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 button::-moz-focus-inner,
 input[type=button]::-moz-focus-inner,
 input[type=reset]::-moz-focus-inner,
 input[type=submit]::-moz-focus-inner {
-    padding: 0
+    padding: 0;
 }
 button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-    background-color: var(--darker-primary);
+    background-color: var(--primary-darker);
 }
 button:not(:disabled):active,
 input[type=button]:not(:disabled):active,
 input[type=reset]:not(:disabled):active,
 input[type=submit]:not(:disabled):active {
-    background-color: var(--darkest-primary);
+    background-color: var(--primary-darkest);
 }
 button:focus,
 input[type=button]:focus,
 input[type=reset]:focus,
 input[type=submit]:focus {
     outline: 0;
-    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5);
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+    -webkit-box-shadow: 0 0 0 .2rem var(--primary-outline);
+    box-shadow: 0 0 0 .2rem var(--primary-outline);
 }
 button:disabled,
 input[type=button]:disabled,
@@ -432,7 +434,7 @@ input[type=reset]:disabled,
 input[type=submit]:disabled {
     opacity: .65;
     cursor: not-allowed;
-    background-color: var(--faded-primary);
+    background-color: var(--primary-faded);
 }
 
 /* Fieldset and Legend */
@@ -446,7 +448,7 @@ legend {
 }
 fieldset {
     border-width: 1px;
-    border-color: var(--border-grey);
+    border-color: var(--grey-border);
     border-style: solid;
     border-radius: 4px;
 }

@@ -53,23 +53,12 @@ No JavaScript. Raw CSS.
 ## Classes
 ### Layout & Utility Helpers
 ```CSS
-.container {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    max-width: 768px;
-    padding: 0 16px 16px
-}
-.container-fluid {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 0 16px 16px
-}
+.container           { width: 100%; margin: 0 auto; max-width: 768px; padding: 0 16px 16px; }
+.container-fluid     { width: 100%; margin: 0 auto; padding: 0 16px 16px; }
 .fill-vertical-space { flex: 1 0 auto; }
-.active { background-color: var(--darker-primary); cursor: not-allowed; }
-.important { background-color: var(--darker-primary); }
-.outline-none { outline: 0; }
+.active              { background-color: var(--primary-darker); cursor: not-allowed; }
+.important           { background-color: var(--primary-darker); }
+.outline-none        { outline: 0; }
 ```
 
 ### Sizing
@@ -136,32 +125,36 @@ No JavaScript. Raw CSS.
 
 ### Color
 ```CSS
-.color-border-grey     { color: var(--border-grey); }
-.color-text-grey       { color: var(--text-grey); }
-.color-lighter-white   { color: var(--lighter-white); }
+.color-grey-border     { color: var(--grey-border); }
+.color-grey-text       { color: var(--grey-text); }
+.color-white-lighter   { color: var(--white-lighter); }
 .color-white           { color: var(--white); }
-.color-darker-white    { color: var(--darker-white); }
-.color-darkest-white   { color: var(--darkest-white); }
+.color-white-darker    { color: var(--white-darker); }
+.color-white-darkest   { color: var(--white-darkest); }
 .color-black           { color: var(--black); }
-.color-faded-primary   { color: var(--faded-primary); }
+.color-primary-outline { color: var(--primary-outline); }
+.color-primary-faded   { color: var(--primary-faded); }
 .color-primary         { color: var(--primary); }
-.color-darker-primary  { color: var(--darker-primary); }
-.color-darkest-primary { color: var(--darkest-primary); }
+.color-primary-darker  { color: var(--primary-darker); }
+.color-primary-darkest { color: var(--primary-darkest); }
+.color-error           { color: var(--error); }
 ```
 
 ### Background Color
 ```CSS
-.bg-border-grey        { background-color: var(--border-grey); }
-.bg-text-grey          { background-color: var(--text-grey); }
-.bg-lighter-white      { background-color: var(--lighter-white); }
-.bg-white              { background-color: var(--white); }
-.bg-darker-white       { background-color: var(--darker-white); }
-.bg-darkest-white      { background-color: var(--darkest-white); }
-.bg-black              { background-color: var(--black); }
-.bg-faded-primary      { background-color: var(--faded-primary); }
-.bg-primary            { background-color: var(--primary); }
-.bg-darker-primary     { background-color: var(--darker-primary); }
-.bg-darkest-primary    { background-color: var(--darkest-primary); }
+.bg-grey-border     { background-color: var(--grey-border); }
+.bg-grey-text       { background-color: var(--grey-text); }
+.bg-white-lighter   { background-color: var(--white-lighter); }
+.bg-white           { background-color: var(--white); }
+.bg-white-darker    { background-color: var(--white-darker); }
+.bg-white-darkest   { background-color: var(--white-darkest); }
+.bg-black           { background-color: var(--black); }
+.bg-primary-outline { background-color: var(--primary-outline); }
+.bg-primary-faded   { background-color: var(--primary-faded); }
+.bg-primary         { background-color: var(--primary); }
+.bg-primary-darker  { background-color: var(--primary-darker); }
+.bg-primary-darkest { background-color: var(--primary-darkest); }
+.bg-error           { background-color: var(--error); }
 ```
 
 ### Visibility
@@ -200,13 +193,13 @@ No JavaScript. Raw CSS.
 
 ### Border
 ```CSS
-.border        { border: 1px solid var(--border-grey); }
-.border-top    { border-top: 1px solid var(--border-grey); }
-.border-bottom { border-bottom: 1px solid var(--border-grey); }
-.border-y      { border-top: 1px solid var(--border-grey); border-bottom: 1px solid var(--border-grey); }
-.border-right  { border-right: 1px solid var(--border-grey); }
-.border-left   { border-left: 1px solid var(--border-grey); }
-.border-x      { border-right: 1px solid var(--border-grey); border-left: 1px solid var(--border-grey); }
+.border        { border: 1px solid var(--grey-border); }
+.border-top    { border-top: 1px solid var(--grey-border); }
+.border-bottom { border-bottom: 1px solid var(--grey-border); }
+.border-y      { border-top: 1px solid var(--grey-border); border-bottom: 1px solid var(--grey-border); }
+.border-right  { border-right: 1px solid var(--grey-border); }
+.border-left   { border-left: 1px solid var(--grey-border); }
+.border-x      { border-right: 1px solid var(--grey-border); border-left: 1px solid var(--grey-border); }
 .border-none   { border: 0; }
 
 .border-solid  { border-style: solid; }
@@ -319,17 +312,19 @@ As of version 1.0, the following predefined variables exist:
 
 | Name | CSS Name | Value |
 |:---|:---|:---|
-|border-grey|var(--border-grey)|#d1d1d1|
-|text-grey|var(--text-grey)|#7d7d7d|
-|lighter-white|var(--lighter-white)|#f7f7f7|
+|grey-border|var(--grey-border)|#d1d1d1|
+|grey-text|var(--grey-text)|#7d7d7d|
+|white-lighter|var(--white-lighter)|#f7f7f7|
 |white|var(--white)|#f3f3f3|
-|darker-white|var(--darker-white)|#eee|
-|darkest-white|var(--darkest-white)|#e9e9e9|
+|white-darker|var(--white-darker)|#eee|
+|white-darkest|var(--white-darkest)|#e9e9e9|
 |black|var(--black)|#121212|
-|faded-primary|var(--faded-primary)|#5c95f4|
+|primary-outline|var(--primary-outline)|rgba(0, 123, 255, .35)|
+|primary-faded|var(--primary-faded)|#5c95f4|
 |primary|var(--primary)|#4285f4|
-|darker-primary|var(--darker-primary)|#3c78dc|
-|darkest-primary|var(--darkest-primary)|#2766cf|
+|primary-darker|var(--primary-darker)|#3c78dc|
+|primary-darkest|var(--primary-darkest)|#2766cf|
+|error|var(--error)|#f43022|
 |padding|var(--padding)|5px|
 |margin|var(--margin)|5px|
 |padding-lg|var(--padding-lg)|10px|
