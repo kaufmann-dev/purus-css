@@ -207,7 +207,7 @@ input[type=color]{
     padding: 0 2px;
 }
 input[type="color"]::-webkit-color-swatch {
-	border-radius: 50px;
+    border-radius: 50px;
     border: 1px solid var(--border-grey);
 }
 input:not([type]),
@@ -226,20 +226,20 @@ input[type=url],
 input[type=week],
 select,
 textarea {
-	background: var(--lighter-white);
-	background-clip: padding-box;
-	border: 1px solid rgba(0, 0, 0, .12);
-	border-radius: 4px;
-	color: rgba(0, 0, 0, .8);
-	display: block;
-	width: 100%;
-	padding: 8px 16px;
-	font-size: 1rem;
-	line-height: 1.5;
-	-webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-	transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    background: var(--lighter-white);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, .8);
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 input:not([type]):focus,
 input[type=color]:focus,
@@ -258,22 +258,22 @@ input[type=url]:focus,
 input[type=week]:focus,
 select:focus,
 textarea:focus {
-	border-color: #80bdff;
-	outline: 0;
-	-webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
-	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    border-color: #80bdff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
 }
 input[type=checkbox],
 input[type=radio] {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
-	display: inline
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    display: inline
 }
 input[type=checkbox]:focus,
 input[type=file]:focus,
 input[type=radio]:focus {
-	outline: 1px thin rgba(0, 0, 0, .12)
+    outline: 1px thin rgba(0, 0, 0, .12)
 }
 input:not([type])[disabled],
 input[type=color][disabled],
@@ -292,96 +292,96 @@ input[type=url][disabled],
 input[type=week][disabled],
 select[disabled],
 textarea[disabled] {
-	background-color: rgba(0, 0, 0, .12);
-	color: rgba(0, 0, 0, .54);
-	cursor: not-allowed;
-	opacity: 1
+    background-color: rgba(0, 0, 0, .12);
+    color: rgba(0, 0, 0, .54);
+    cursor: not-allowed;
+    opacity: 1
 }
 input[readonly],
 select[readonly],
 textarea[readonly] {
-	border-color: rgba(0, 0, 0, .12);
-	color: rgba(0, 0, 0, .54)
+    border-color: rgba(0, 0, 0, .12);
+    color: rgba(0, 0, 0, .54)
 }
 input:focus:invalid,
 select:focus:invalid,
 textarea:focus:invalid {
-	border-color: #ea1c0d;
-	color: #f44336
+    border-color: #ea1c0d;
+    color: #f44336
 }
 input[type=checkbox]:focus:invalid:focus,
 input[type=file]:focus:invalid:focus,
 input[type=radio]:focus:invalid:focus {
-	outline-color: #f44336
+    outline-color: #f44336
 }
 label {
-	display: inline-block;
-	line-height: 2
+    display: inline-block;
+    line-height: 2
 }
 textarea {
-	overflow: auto;
-	resize: vertical
+    overflow: auto;
+    resize: vertical
 }
 button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
-	background-color: var(--blue);
-	border-radius: 4px;
+    background-color: var(--blue);
+    border-radius: 4px;
     cursor: pointer;
-	color:var(--white);
-	padding: 8px 16px;
-	display: inline-block;
-	font-weight: 400;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	border: 1px solid rgba(0, 0, 0, 0);
-	font-size: 1rem;
-	line-height: 1.5;
-	-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
+    color:var(--white);
+    padding: 8px 16px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
 }
 button::-moz-focus-inner,
 input[type=button]::-moz-focus-inner,
 input[type=reset]::-moz-focus-inner,
 input[type=submit]::-moz-focus-inner {
-	padding: 0
+    padding: 0
 }
 button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-	background-color: var(--darker-blue);
+    background-color: var(--darker-blue);
 }
 button:not(:disabled):active,
 input[type=button]:not(:disabled):active,
 input[type=reset]:not(:disabled):active,
 input[type=submit]:not(:disabled):active {
-	background-color: var(--darkest-blue);
+    background-color: var(--darkest-blue);
 }
 button:focus,
 input[type=button]:focus,
 input[type=reset]:focus,
 input[type=submit]:focus {
-	outline: 0;
-	-webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5);
-	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5);
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
 }
 button:disabled,
 input[type=button]:disabled,
 input[type=reset]:disabled,
 input[type=submit]:disabled {
-	opacity: .65;
-	cursor: not-allowed;
-	background-color: var(--faded-blue);
+    opacity: .65;
+    cursor: not-allowed;
+    background-color: var(--faded-blue);
 }
 /* NORMALIZE.CSS */
 abbr[title] {
