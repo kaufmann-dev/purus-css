@@ -314,11 +314,10 @@ As of version 1.0, the following predefined variables exist:
 |:---|:---|:---|
 |grey-border|var(--grey-border)|#d1d1d1|
 |grey-text|var(--grey-text)|#7d7d7d|
-|white-lighter|var(--white-lighter)|#f7f7f7|
-|white|var(--white)|#f3f3f3|
-|white-darker|var(--white-darker)|#eee|
-|white-darkest|var(--white-darkest)|#e9e9e9|
-|black|var(--black)|#121212|
+|white|var(--white)|#ffffff|
+|white-darker|var(--white-darker)|#f9f9f9|
+|white-darkest|var(--white-darkest)|#f3f3f3|
+|black|var(--black)|#000000|
 |primary-outline|var(--primary-outline)|rgba(0, 123, 255, .35)|
 |primary-faded|var(--primary-faded)|#5c95f4|
 |primary|var(--primary)|#4285f4|
@@ -331,10 +330,10 @@ As of version 1.0, the following predefined variables exist:
 |margin-lg|var(--margin-lg)|10px|
 
 
-As an example, let's try to override white with `#fff`:
+As an example, let's try to override white with `#f9f9f9`:
 ```CSS
 :root {
-    --white: #fff;
+    --white: #f9f9f9;
 }
 ```
-Calling `var(--white)` will now return the value `#fff`.
+Calling `var(--white)` will now return the value `#f9f9f9`.
