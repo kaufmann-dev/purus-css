@@ -127,7 +127,6 @@ No JavaScript. Raw CSS.
 ```CSS
 .color-grey-border     { color: var(--grey-border); }
 .color-grey-text       { color: var(--grey-text); }
-.color-white-lighter   { color: var(--white-lighter); }
 .color-white           { color: var(--white); }
 .color-white-darker    { color: var(--white-darker); }
 .color-white-darkest   { color: var(--white-darkest); }
@@ -144,7 +143,6 @@ No JavaScript. Raw CSS.
 ```CSS
 .bg-grey-border     { background-color: var(--grey-border); }
 .bg-grey-text       { background-color: var(--grey-text); }
-.bg-white-lighter   { background-color: var(--white-lighter); }
 .bg-white           { background-color: var(--white); }
 .bg-white-darker    { background-color: var(--white-darker); }
 .bg-white-darkest   { background-color: var(--white-darkest); }
