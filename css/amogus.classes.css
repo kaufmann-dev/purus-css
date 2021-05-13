@@ -15,11 +15,11 @@
     flex: 1 0 auto;
 }
 .active {
-    background-color: var(--darker-blue);
+    background-color: var(--darker-primary);
     cursor: not-allowed;
 }
 .important {
-    background-color: var(--darker-blue);
+    background-color: var(--darker-primary);
 }
 .visible { visibility: visible; }
 .invisible { visibility:  hidden; }
