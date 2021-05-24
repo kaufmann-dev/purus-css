@@ -306,7 +306,7 @@ No JavaScript. Raw CSS.
 
 ## Customize using CSS variables
 In Purus CSS, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Purus CSS!**
-As of version 1.0, the following predefined variables exist:
+The following predefined variables exist:
 
 | Name | CSS Name | Value |
 |:---|:---|:---|
