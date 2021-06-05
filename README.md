@@ -39,7 +39,9 @@ No JavaScript. Raw CSS.
 
 ## [Website](https://sus-amogus.github.io/amogus.css/)
 
-## [Demo](https://sus-amogus.github.io/amogus.css/demo.html)
+## Example sites
+* [Demo](https://sus-amogus.github.io/amogus.css/examples/demo.html)
+* [Starter site](https://sus-amogus.github.io/amogus.css/examples/starter_site.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
@@ -71,6 +73,7 @@ No JavaScript. Raw CSS.
 .w-auto    { width: auto; }
 .w-content { width: fit-content; }
 ```
+
 ### Paddind and margin
 ```CSS
 .p        { padding: var(--padding); }
@@ -111,6 +114,33 @@ No JavaScript. Raw CSS.
 
 .m-none   { margin: 0; }
 .m-auto   { margin: auto; }
+```
+
+### Color and background color
+```CSS
+.bg-border-grey { background-color: var(--border-grey); }
+.bg-text-grey { background-color: var(--text-grey); }
+.bg-lighter-white { background-color: var(--lighter-white); }
+.bg-white { background-color: var(--white); }
+.bg-darker-white { background-color: var(--darker-white); }
+.bg-darkest-white { background-color: var(--darkest-white); }
+.bg-black { background-color: var(--black); }
+.bg-faded-primary { background-color: var(--faded-primary); }
+.bg-primary { background-color: var(--primary); }
+.bg-darker-primary { background-color: var(--darker-primary); }
+.bg-darkest-primary { background-color: var(--darkest-primary); }
+
+.color-border-grey { color: var(--border-grey); }
+.color-text-grey { color: var(--text-grey); }
+.color-lighter-white { color: var(--lighter-white); }
+.color-white { color: var(--white); }
+.color-darker-white { color: var(--darker-white); }
+.color-darkest-white { color: var(--darkest-white); }
+.color-black { color: var(--black); }
+.color-faded-primary { color: var(--faded-primary); }
+.color-primary { color: var(--primary); }
+.color-darker-primary { color: var(--darker-primary); }
+.color-darkest-primary { color: var(--darkest-primary); }
 ```
 
 ### Visibility
@@ -230,7 +260,6 @@ No JavaScript. Raw CSS.
 .right-0   { right: 0; }
 .right-10  { right: 10px; }
 ```
-
 
 ## Customize using CSS variables
 In Amogus.css, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Amogus.css!**
