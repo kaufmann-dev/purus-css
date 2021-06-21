@@ -5,43 +5,43 @@ No JavaScript. Raw CSS.
 ```
 
 ## Get Started
-[Download](https://github.com/sus-amogus/amogus.css/archive/refs/heads/main.zip)
+[Download](https://github.com/david-kaufmann-2003/amogus.css/archive/refs/heads/main.zip)
 
-[Download CSS](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.css)
+[Download CSS](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.css)
 
-[Download CSS (minified)](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.min.css)
+[Download CSS (minified)](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.min.css)
 
-[Download drop-in CSS](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.drop-in.css)
+[Download drop-in CSS](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.drop-in.css)
 
-[Download drop-in CSS (minified)](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.drop-in.min.css)
+[Download drop-in CSS (minified)](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.drop-in.min.css)
 
-[Download CSS classes](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.classes.css)
+[Download CSS classes](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.classes.css)
 
-[Download CSS classes (minified)](https://raw.githubusercontent.com/sus-amogus/amogus.css/main/css/amogus.classes.min.css)
+[Download CSS classes (minified)](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.classes.min.css)
 
 ### JSDelivr CDN
-* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.min.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.min.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css
-* https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css
+* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.min.css
+* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.css
+* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.css
+* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.min.css
+* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.css
+* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.min.css
 
 ### `link` with JSDelivr CDN
 ```HTML
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.drop-in.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sus-amogus/amogus.css/css/amogus.classes.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.min.css">
 ```
 
-## [Website](https://sus-amogus.github.io/amogus.css/)
+## [Website](https://david-kaufmann-2003.github.io/amogus.css/)
 
 ## Example sites
-* [Demo](https://sus-amogus.github.io/amogus.css/examples/demo.html)
-* [Starter site](https://sus-amogus.github.io/amogus.css/examples/starter_site.html)
+* [Demo](https://david-kaufmann-2003.github.io/amogus.css/examples/demo.html)
+* [Starter site](https://david-kaufmann-2003.github.io/amogus.css/examples/starter_site.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
