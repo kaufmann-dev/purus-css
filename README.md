@@ -1,47 +1,47 @@
-# Amogus.css
+# Purus CSS
 **Minimalist CSS Framework**
 ```
 No JavaScript. Raw CSS.
 ```
 
 ## Get Started
-[Download](https://github.com/david-kaufmann-2003/amogus.css/archive/refs/heads/main.zip)
+[Download](https://github.com/kaufmann-dev/purus.css/archive/refs/heads/main.zip)
 
-[Download CSS](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.css)
+[Download CSS](https://raw.githubusercontent.com/kaufmann-dev/purus.css/main/css/purus.css)
 
-[Download CSS (minified)](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.min.css)
+[Download CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus.css/main/css/purus.min.css)
 
-[Download drop-in CSS](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.drop-in.css)
+[Download drop-in CSS](https://raw.githubusercontent.com/kaufmann-dev/purus.css/main/css/purus.drop-in.css)
 
-[Download drop-in CSS (minified)](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.drop-in.min.css)
+[Download drop-in CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus.css/main/css/purus.drop-in.min.css)
 
-[Download CSS classes](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.classes.css)
+[Download CSS classes](https://raw.githubusercontent.com/kaufmann-dev/purus.css/main/css/purus.classes.css)
 
-[Download CSS classes (minified)](https://raw.githubusercontent.com/david-kaufmann-2003/amogus.css/main/css/amogus.classes.min.css)
+[Download CSS classes (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus.css/main/css/purus.classes.min.css)
 
 ### JSDelivr CDN
-* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.min.css
-* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.css
-* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.css
-* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.min.css
-* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.css
-* https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.min.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.min.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.drop-in.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.drop-in.min.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.classes.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.classes.min.css
 
 ### `link` with JSDelivr CDN
 ```HTML
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.drop-in.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/david-kaufmann-2003/amogus.css/css/amogus.classes.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.drop-in.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.drop-in.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.classes.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus.css/css/purus.classes.min.css">
 ```
 
-## [Website](https://david-kaufmann-2003.github.io/amogus.css/)
+## [Website](https://puruscss.kaufmann.dev/purus.css/)
 
 ## Example sites
-* [Demo](https://david-kaufmann-2003.github.io/amogus.css/examples/demo.html)
-* [Starter site](https://david-kaufmann-2003.github.io/amogus.css/examples/starter_site.html)
+* [Demo](https://puruscss.kaufmann.dev/purus.css/examples/demo.html)
+* [Starter site](https://puruscss.kaufmann.dev/purus.css/examples/starter_site.html)
 
 ## Key features
 * Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
@@ -262,7 +262,7 @@ No JavaScript. Raw CSS.
 ```
 
 ## Customize using CSS variables
-In Amogus.css, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Amogus.css!**
+In Purus CSS, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Purus CSS!**
 As of version 1.0, the following predefined variables exist:
 
 | Name | CSS Name | Value |
