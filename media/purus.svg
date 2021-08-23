@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg61052"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="puruscss.svg"
+   inkscape:export-filename="C:\Users\serbi\Desktop\puruscss.png"
+   inkscape:export-xdpi="198.51454"
+   inkscape:export-ydpi="198.51454"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview61054"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.90583675"
+     inkscape:cx="187.11981"
+     inkscape:cy="235.14171"
+     inkscape:window-width="3840"
+     inkscape:window-height="2036"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:snap-global="true"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs61049" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       id="text835"
+       y="142.44795"
+       x="63.939404"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.1974px;line-height:1;font-family:Urbanist;-inkscape-font-specification:'Urbanist, @wght=700';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 700;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#264de4;fill-opacity:1;stroke:none;stroke-width:1.99386;stroke-miterlimit:4;stroke-dasharray:none"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\serbi\Desktop\text835.png"
+       inkscape:export-xdpi="294.71143"
+       inkscape:export-ydpi="294.71143"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.1974px;font-family:Urbanist;-inkscape-font-specification:'Urbanist, @wght=700';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 700;fill:#132719;fill-opacity:1;stroke-width:1.99386;stroke-miterlimit:4;stroke-dasharray:none"
+         y="142.44795"
+         x="63.939404"
+         sodipodi:role="line"
+         id="tspan2300"><tspan
+           style="fill:#000000"
+           id="tspan63717">Purus</tspan><tspan
+           style="font-size:65%;baseline-shift:super;fill:#264de4;fill-opacity:1"
+           id="tspan47632">CSS</tspan></tspan></text>
+    <g
+       id="g16058"
+       transform="matrix(0.5386171,0.5386171,-0.5386171,0.5386171,9.434985,52.929204)"
+       inkscape:export-filename="C:\Users\serbi\Desktop\text835.png"
+       inkscape:export-xdpi="294.71143"
+       inkscape:export-ydpi="294.71143">
+      <rect
+         transform="rotate(45)"
+         y="-65.919189"
+         x="93.361221"
+         height="21.489761"
+         width="21.489761"
+         id="rect1320"
+         style="fill:#5977ea;fill-opacity:1;stroke:#264de4;stroke-width:5.34186;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         transform="rotate(45)"
+         y="-57.971863"
+         x="101.11703"
+         height="5.358819"
+         width="5.358819"
+         id="rect1332"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.34186;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
