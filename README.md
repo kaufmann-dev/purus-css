@@ -44,20 +44,35 @@ No JavaScript. Raw CSS.
 * [Starter site](https://puruscss.kaufmann.dev/examples/starter_site.html)
 
 ## Key features
-* Developed alongside [Normalize.css](https://github.com/necolas/normalize.css/), which means every normalization is included
+* Developed alongside [modern-normalize](https://github.com/sindresorhus/modern-normalize), which means every normalization is included
 * Customize using CSS variables
 * Responsive and mobile-friendly
 * Clean, beautiful typography
 * Forms, tables, buttons and navigation
 
 ## Classes
-* `.container`: Responsive fixed width container.
-* `.container-fluid`: Full width container.
-* `.fill-vertical-space`: Make an element fill out remaining vertical space.
-* `.active`  and `.important`: Style buttons.
-* `outline-none`: Remove outline.
+### Layout & Utility Helpers
+```CSS
+.container {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 16px 16px
+}
+.container-fluid {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 16px 16px
+}
+.fill-vertical-space { flex: 1 0 auto; }
+.active { background-color: var(--darker-primary); cursor: not-allowed; }
+.important { background-color: var(--darker-primary); }
+.outline-none { outline: 0; }
+```
 
-### Height and width
+### Sizing
 ```CSS
 .h-25      { height: 25%; }
 .h-50      { height: 50%; }
@@ -74,7 +89,7 @@ No JavaScript. Raw CSS.
 .w-content { width: fit-content; }
 ```
 
-### Paddind and margin
+### Padding
 ```CSS
 .p        { padding: var(--padding); }
 .px       { padding-left: var(--padding); padding-right: var(--padding); }
@@ -95,41 +110,32 @@ No JavaScript. Raw CSS.
 .p-nav-lg { padding: var(--padding-lg) var(--padding-lg) calc(var(--padding-lg) - 5px) var(--padding-lg); }
 
 .p-none   { padding: 0; }
-
-.m        { margin: var(--margin); }
-.mx       { margin-left: var(--margin); margin-right: var(--margin); }
-.my       { margin-top: var(--margin); margin-bottom: var(--margin); }
-.ml       { margin-left: var(--margin); }
-.mr       { margin-right: var(--margin); }
-.mt       { margin-top: var(--margin); }
-.mb       { margin-bottom: var(--margin); }
-
-.m-lg     { margin: var(--margin-lg); }
-.mx-lg    { margin-left: var(--margin-lg); margin-right: var(--margin-lg); }
-.my-lg    { margin-top: var(--margin-lg); margin-bottom: var(--margin-lg); }
-.ml-lg    { margin-left: var(--margin-lg); }
-.mr-lg    { margin-right: var(--margin-lg); }
-.mt-lg    { margin-top: var(--margin-lg); }
-.mb-lg    { margin-bottom: var(--margin-lg); }
-
-.m-none   { margin: 0; }
-.m-auto   { margin: auto; }
 ```
 
-### Color and background color
+### Margin
 ```CSS
-.bg-border-grey        { background-color: var(--border-grey); }
-.bg-text-grey          { background-color: var(--text-grey); }
-.bg-lighter-white      { background-color: var(--lighter-white); }
-.bg-white              { background-color: var(--white); }
-.bg-darker-white       { background-color: var(--darker-white); }
-.bg-darkest-white      { background-color: var(--darkest-white); }
-.bg-black              { background-color: var(--black); }
-.bg-faded-primary      { background-color: var(--faded-primary); }
-.bg-primary            { background-color: var(--primary); }
-.bg-darker-primary     { background-color: var(--darker-primary); }
-.bg-darkest-primary    { background-color: var(--darkest-primary); }
+.m      { margin: var(--margin); }
+.mx     { margin-left: var(--margin); margin-right: var(--margin); }
+.my     { margin-top: var(--margin); margin-bottom: var(--margin); }
+.ml     { margin-left: var(--margin); }
+.mr     { margin-right: var(--margin); }
+.mt     { margin-top: var(--margin); }
+.mb     { margin-bottom: var(--margin); }
 
+.m-lg   { margin: var(--margin-lg); }
+.mx-lg  { margin-left: var(--margin-lg); margin-right: var(--margin-lg); }
+.my-lg  { margin-top: var(--margin-lg); margin-bottom: var(--margin-lg); }
+.ml-lg  { margin-left: var(--margin-lg); }
+.mr-lg  { margin-right: var(--margin-lg); }
+.mt-lg  { margin-top: var(--margin-lg); }
+.mb-lg  { margin-bottom: var(--margin-lg); }
+
+.m-none { margin: 0; }
+.m-auto { margin: auto; }
+```
+
+### Color
+```CSS
 .color-border-grey     { color: var(--border-grey); }
 .color-text-grey       { color: var(--text-grey); }
 .color-lighter-white   { color: var(--lighter-white); }
@@ -143,20 +149,35 @@ No JavaScript. Raw CSS.
 .color-darkest-primary { color: var(--darkest-primary); }
 ```
 
+### Background Color
+```CSS
+.bg-border-grey        { background-color: var(--border-grey); }
+.bg-text-grey          { background-color: var(--text-grey); }
+.bg-lighter-white      { background-color: var(--lighter-white); }
+.bg-white              { background-color: var(--white); }
+.bg-darker-white       { background-color: var(--darker-white); }
+.bg-darkest-white      { background-color: var(--darkest-white); }
+.bg-black              { background-color: var(--black); }
+.bg-faded-primary      { background-color: var(--faded-primary); }
+.bg-primary            { background-color: var(--primary); }
+.bg-darker-primary     { background-color: var(--darker-primary); }
+.bg-darkest-primary    { background-color: var(--darkest-primary); }
+```
+
 ### Visibility
 ```CSS
 .visible   { visibility: visible; }
 .invisible { visibility:  hidden; }
 ```
 
-### Text alignment
+### Text Alignment
 ```CSS
 .text-center { text-align: center; }
 .text-left   { text-align: left; }
 .text-right  { text-align: right; }
 ```
 
-### Vertical alignment
+### Vertical Alignment
 ```CSS
 .align-baseline    { vertical-align: baseline; }
 .align-top         { vertical-align: top; }
@@ -192,10 +213,9 @@ No JavaScript. Raw CSS.
 .border-dashe  { border-style: dashed; }
 .border-dotted { border-style: dotted; }
 .border-double { border-style: double; }
-.border-none   { border-style: none; }
 ```
 
-### Border radius
+### Border Radius
 ```CSS
 .rounded-none { border-radius: 0px; }
 .rounded-sm   { border-radius: 0.125rem; }
@@ -243,7 +263,7 @@ No JavaScript. Raw CSS.
 .position-fixed    { position: fixed; }
 ```
 
-### Top/Right/Bottom/Left
+### Edge Offsets
 ```CSS
 .all-0     { left: 0; right: 0; bottom: 0; top: 0; }
 .all-10    { left: 10px; right: 10px; bottom: 10px; top: 10px; }
@@ -259,6 +279,38 @@ No JavaScript. Raw CSS.
 .left-10   { left: 10px; }
 .right-0   { right: 0; }
 .right-10  { right: 10px; }
+```
+
+### Display Utilities
+```CSS
+.d-none                { display: none; }
+.d-inline              { display: inline; }
+.d-block               { display: block; }
+.d-contents            { display: contents; }
+.d-list-item           { display: list-item; }
+.d-inline-block        { display: inline-block; }
+.d-inline-table        { display: inline-table; }
+.d-table               { display: table; }
+.d-table-cell          { display: table-cell; }
+.d-table-column        { display: table-column; }
+.d-table-column-group  { display: table-column-group; }
+.d-table-footer-group  { display: table-footer-group; }
+.d-table-header-group  { display: table-header-group; }
+.d-table-row           { display: table-row; }
+.d-table-row-group     { display: table-row-group; }
+.d-flex                { display: flex; }
+.d-inline-flex         { display: inline-flex; }
+.d-grid                { display: grid; }
+.d-inline-grid         { display: inline-grid; }
+.d-ruby                { display: ruby; }
+.d-ruby-base           { display: ruby-base; }
+.d-ruby-text           { display: ruby-text; }
+.d-ruby-base-container { display: ruby-base-container; }
+.d-ruby-text-container { display: ruby-text-container; }
+.d-run-in              { display: run-in; }
+.d-inherit             { display: inherit; }
+.d-initial             { display: initial; }
+.d-unset               { display: unset; }
 ```
 
 ## Customize using CSS variables
