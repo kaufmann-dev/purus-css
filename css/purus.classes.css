@@ -2,11 +2,10 @@
 :root {
     --grey-border: #d1d1d1;
     --grey-text: #7d7d7d;
-    --white-lighter: #ffffff;
-    --white: #f9f9f9;
-    --white-darker: #f3f3f3;
-    --white-darkest: #ededed;
-    --black: #121212;
+    --white: #ffffff;
+    --white-darker: #f9f9f9;
+    --white-darkest: #f3f3f3;
+    --black: #000000;
     --primary-outline: rgba(0, 123, 255, .35);
     --primary-faded: #5c95f4;
     --primary: #4285f4;
@@ -96,7 +95,6 @@
 /** Color */
 .color-grey-border { color: var(--grey-border); }
 .color-grey-text { color: var(--grey-text); }
-.color-white-lighter { color: var(--white-lighter); }
 .color-white { color: var(--white); }
 .color-white-darker { color: var(--white-darker); }
 .color-white-darkest { color: var(--white-darkest); }
@@ -111,7 +109,6 @@
 /** Background Color */
 .bg-grey-border { background-color: var(--grey-border); }
 .bg-grey-text { background-color: var(--grey-text); }
-.bg-white-lighter { background-color: var(--white-lighter); }
 .bg-white { background-color: var(--white); }
 .bg-white-darker { background-color: var(--white-darker); }
 .bg-white-darkest { background-color: var(--white-darkest); }
