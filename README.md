@@ -40,8 +40,8 @@ No JavaScript. Raw CSS.
 ## [Website](https://puruscss.kaufmann.dev/)
 
 ## Example sites
-* [Demo](https://puruscss.kaufmann.dev/examples/demo.html)
-* [Starter site](https://puruscss.kaufmann.dev/examples/starter_site.html)
+* [Demo](https://puruscss.kaufmann.dev/demo)
+* [Starter site](https://puruscss.kaufmann.dev/starter_site)
 
 ## Key features
 * Developed alongside [modern-normalize](https://github.com/sindresorhus/modern-normalize), which means every normalization is included
