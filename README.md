@@ -41,7 +41,7 @@ No JavaScript. Raw CSS.
 
 ## Example sites
 * [Demo](https://puruscss.kaufmann.dev/demo)
-* [Starter site](https://puruscss.kaufmann.dev/starter_site)
+* [Starter site](https://puruscss.kaufmann.dev/starter-site)
 
 ## Key features
 * Developed alongside [modern-normalize](https://github.com/sindresorhus/modern-normalize), which means every normalization is included
