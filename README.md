@@ -7,13 +7,12 @@ No JavaScript. Raw CSS.
 ## Get Started
 
 ### Download
-* [Download](https://github.com/kaufmann-dev/purus-css/archive/refs/heads/main.zip)
-* [Download CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.css)
-* [Download CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.min.css)
-* [Download drop-in CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.css)
-* [Download drop-in CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.min.css)
-* [Download CSS classes](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.css)
-* [Download CSS classes (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.min.css)
+* [Complete CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.css)
+* [Complete CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.min.css)
+* [Drop-in CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.css)
+* [Drop-in CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.min.css)
+* [CSS classes](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.css)
+* [CSS classes (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.min.css)
 
 ### JSDelivr CDN
 * https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css
