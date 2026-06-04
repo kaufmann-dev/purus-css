@@ -15,8 +15,8 @@ No JavaScript. Raw CSS.
 * [CSS classes (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.min.css)
 
 ### JSDelivr CDN
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css
 * https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.css
+* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css
 * https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.css
 * https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.min.css
 * https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.classes.css
@@ -24,8 +24,8 @@ No JavaScript. Raw CSS.
 
 ### `link` with JSDelivr CDN
 ```HTML
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.classes.css">
