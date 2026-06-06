@@ -115,19 +115,3 @@ Purus CSS:
 ```
 
 Purus CSS does not bundle fonts or make runtime font requests.
-
-## Migration Notes
-
-This cleanup release replaces the split builds with one complete artifact.
-Replace references to `purus.drop-in.css`, `purus.drop-in.min.css`,
-`purus.classes.css`, or `purus.classes.min.css` with `purus.css` or
-`purus.min.css`.
-
-The `.active`, `.important`, and `.outline-none` classes were removed. Use
-semantic state such as `.button[aria-current="page"]` and preserve visible
-focus indicators.
-
-The following specialized display helpers were removed:
-`.d-inline-table`, internal table display helpers, ruby display helpers, and
-`.d-run-in`. Use purpose-specific component CSS when those display modes are
-needed.
