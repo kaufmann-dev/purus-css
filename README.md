@@ -1,28 +1,42 @@
 # Purus CSS
+
 **Minimalist CSS Framework**
+
 ```
 No JavaScript. Raw CSS.
 ```
 
+14.2 KB minified.
+
 ## Get Started
 
+Purus CSS ships as plain CSS with no required package installation:
+
+- `css/purus.css` is the complete build, composed from `css/purus.classes.css` and `css/purus.drop-in.css`.
+- `css/purus.drop-in.css` styles semantic HTML elements and includes the `.button` class.
+- `css/purus.classes.css` contains utility classes only.
+- Each source file has a matching checked-in minified distribution file.
+
 ### Download
-* [Complete CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.css)
-* [Complete CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.min.css)
-* [Drop-in CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.css)
-* [Drop-in CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.min.css)
-* [CSS classes](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.css)
-* [CSS classes (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.min.css)
+
+- [Complete CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.css)
+- [Complete CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.min.css)
+- [Drop-in CSS](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.css)
+- [Drop-in CSS (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.drop-in.min.css)
+- [CSS classes](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.css)
+- [CSS classes (minified)](https://raw.githubusercontent.com/kaufmann-dev/purus-css/main/css/purus.classes.min.css)
 
 ### JSDelivr CDN
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.css
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.css
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.min.css
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.classes.css
-* https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.classes.min.css
+
+- https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.css
+- https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css
+- https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.css
+- https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.drop-in.min.css
+- https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.classes.css
+- https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.classes.min.css
 
 ### `link` with JSDelivr CDN
+
 ```HTML
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaufmann-dev/purus-css/css/purus.min.css">
@@ -35,18 +49,34 @@ No JavaScript. Raw CSS.
 ## [Website](https://puruscss.kaufmann.dev/)
 
 ## Example sites
-* [Demo](https://puruscss.kaufmann.dev/demo)
-* [Starter site](https://puruscss.kaufmann.dev/starter-site)
+
+- [Demo](https://puruscss.kaufmann.dev/demo)
+- [Starter site](https://puruscss.kaufmann.dev/starter-site)
 
 ## Key features
-* Developed alongside [modern-normalize](https://github.com/sindresorhus/modern-normalize), which means every normalization is included
-* Customize using CSS variables
-* Responsive and mobile-friendly
-* Clean, beautiful typography
-* Forms, tables, buttons and navigation
+
+- Developed alongside [modern-normalize](https://github.com/sindresorhus/modern-normalize), which means every normalization is included
+- Customize using CSS variables
+- Responsive and mobile-friendly
+- Clean, beautiful typography
+- Forms, tables, buttons and navigation
+- Visible keyboard focus and reduced-motion support
+
+### Button links
+
+Use `.button` when a link should look like a button. Native buttons and `.button` links share hover, active, focus, and transition behavior. Use `aria-disabled="true"` on a `.button` link to apply the disabled appearance.
+
+```HTML
+<a class="button" href="/download">Download</a>
+<a class="button" aria-disabled="true">Unavailable</a>
+```
+
+Form controls keep a visible focus indicator, and focused invalid controls use the `--error` color.
 
 ## Classes
+
 ### Layout & Utility Helpers
+
 ```CSS
 .container           { width: 100%; margin: 0 auto; max-width: 768px; padding: 0 16px 16px; }
 .container-fluid     { width: 100%; margin: 0 auto; padding: 0 16px 16px; }
@@ -57,6 +87,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Sizing
+
 ```CSS
 .h-25      { height: 25%; }
 .h-50      { height: 50%; }
@@ -74,6 +105,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Padding
+
 ```CSS
 .p        { padding: var(--padding); }
 .px       { padding-left: var(--padding); padding-right: var(--padding); }
@@ -97,6 +129,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Margin
+
 ```CSS
 .m      { margin: var(--margin); }
 .mx     { margin-left: var(--margin); margin-right: var(--margin); }
@@ -119,6 +152,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Color
+
 ```CSS
 .color-grey-border     { color: var(--grey-border); }
 .color-grey-text       { color: var(--grey-text); }
@@ -135,6 +169,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Background Color
+
 ```CSS
 .bg-grey-border     { background-color: var(--grey-border); }
 .bg-grey-text       { background-color: var(--grey-text); }
@@ -151,12 +186,14 @@ No JavaScript. Raw CSS.
 ```
 
 ### Visibility
+
 ```CSS
 .visible   { visibility: visible; }
 .invisible { visibility:  hidden; }
 ```
 
 ### Text Alignment
+
 ```CSS
 .text-center { text-align: center; }
 .text-left   { text-align: left; }
@@ -164,6 +201,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Vertical Alignment
+
 ```CSS
 .align-baseline    { vertical-align: baseline; }
 .align-top         { vertical-align: top; }
@@ -174,6 +212,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Shadow
+
 ```CSS
 .shadow-sm    { box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); }
 .shadow       { box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06); }
@@ -185,6 +224,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Border
+
 ```CSS
 .border        { border: 1px solid var(--grey-border); }
 .border-top    { border-top: 1px solid var(--grey-border); }
@@ -196,12 +236,13 @@ No JavaScript. Raw CSS.
 .border-none   { border: 0; }
 
 .border-solid  { border-style: solid; }
-.border-dashe  { border-style: dashed; }
+.border-dashed { border-style: dashed; }
 .border-dotted { border-style: dotted; }
 .border-double { border-style: double; }
 ```
 
 ### Border Radius
+
 ```CSS
 .rounded-none { border-radius: 0px; }
 .rounded-sm   { border-radius: 0.125rem; }
@@ -215,6 +256,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Float
+
 ```CSS
 .float-none  { float: none; }
 .float-left  { float: left; }
@@ -222,6 +264,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Opacity
+
 ```CSS
 .opacity-0   { opacity: 0; }
 .opacity-5   { opacity: 0.05; }
@@ -230,7 +273,7 @@ No JavaScript. Raw CSS.
 .opacity-25  { opacity: 0.25; }
 .opacity-30  { opacity: 0.3; }
 .opacity-40  { opacity: 0.4; }
-.opacity-50  { opacity: 0.5; }   
+.opacity-50  { opacity: 0.5; }
 .opacity-60  { opacity: 0.6; }
 .opacity-70  { opacity: 0.7; }
 .opacity-75  { opacity: 0.75; }
@@ -241,6 +284,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Position
+
 ```CSS
 .position-static   { position: static; }
 .position-relative { position: relative; }
@@ -250,6 +294,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Edge Offsets
+
 ```CSS
 .all-0     { left: 0; right: 0; bottom: 0; top: 0; }
 .all-10    { left: 10px; right: 10px; bottom: 10px; top: 10px; }
@@ -268,6 +313,7 @@ No JavaScript. Raw CSS.
 ```
 
 ### Display Utilities
+
 ```CSS
 .d-none                { display: none; }
 .d-inline              { display: inline; }
@@ -300,33 +346,35 @@ No JavaScript. Raw CSS.
 ```
 
 ## Customize using CSS variables
+
 In Purus CSS, several predefined variables exist. This is in order to make it easier for you to customize these values. All variables have a default value. To change these values, simply define variables with the same name in a custom CSS file. This will override the old values. **Make sure to load your custom CSS after Purus CSS!**
 The following predefined variables exist:
 
-| Name | CSS Name | Value |
-|:---|:---|:---|
-|grey-border|var(--grey-border)|#d1d1d1|
-|grey-text|var(--grey-text)|#7d7d7d|
-|white|var(--white)|#ffffff|
-|white-darker|var(--white-darker)|#f9f9f9|
-|white-darkest|var(--white-darkest)|#f3f3f3|
-|black|var(--black)|#000000|
-|primary-outline|var(--primary-outline)|rgba(0, 123, 255, .35)|
-|primary-faded|var(--primary-faded)|#5c95f4|
-|primary|var(--primary)|#4285f4|
-|primary-darker|var(--primary-darker)|#3c78dc|
-|primary-darkest|var(--primary-darkest)|#2766cf|
-|error|var(--error)|#f43022|
-|padding|var(--padding)|5px|
-|margin|var(--margin)|5px|
-|padding-lg|var(--padding-lg)|10px|
-|margin-lg|var(--margin-lg)|10px|
-
+| Name            | CSS Name               | Value                  |
+| --------------- | ---------------------- | ---------------------- |
+| grey-border     | var(--grey-border)     | #d1d1d1                |
+| grey-text       | var(--grey-text)       | #7d7d7d                |
+| white           | var(--white)           | #ffffff                |
+| white-darker    | var(--white-darker)    | #f9f9f9                |
+| white-darkest   | var(--white-darkest)   | #f3f3f3                |
+| black           | var(--black)           | #000000                |
+| primary-outline | var(--primary-outline) | rgba(0, 123, 255, .35) |
+| primary-faded   | var(--primary-faded)   | #5c95f4                |
+| primary         | var(--primary)         | #4285f4                |
+| primary-darker  | var(--primary-darker)  | #3c78dc                |
+| primary-darkest | var(--primary-darkest) | #2766cf                |
+| error           | var(--error)           | #f43022                |
+| padding         | var(--padding)         | 5px                    |
+| margin          | var(--margin)          | 5px                    |
+| padding-lg      | var(--padding-lg)      | 10px                   |
+| margin-lg       | var(--margin-lg)       | 10px                   |
 
 As an example, let's try to override white with `#f9f9f9`:
+
 ```CSS
 :root {
     --white: #f9f9f9;
 }
 ```
+
 Calling `var(--white)` will now return the value `#f9f9f9`.

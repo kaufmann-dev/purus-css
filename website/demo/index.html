@@ -1,63 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Demo | Minimalist CSS Framework. No JavaScript. Raw CSS. 14.3 KB minified.">
-    <meta name="author" content="David Kaufmann">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Demo | Minimalist CSS Framework. No JavaScript. Raw CSS. 14.2 KB minified."
+    />
+    <meta name="author" content="David Kaufmann" />
     <title>Demo | Purus CSS</title>
-    <link rel="apple-touch-icon" href="../media/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="../media/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../css/purus.min.css">
+    <link rel="apple-touch-icon" href="../media/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" href="../media/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../css/purus.min.css" />
   </head>
   <body>
-      <div class="container">
-      <header role="banner">
+    <div class="container">
+      <header>
         <h1>Purus CSS Demo</h1>
-        <p>This page acts as a demonstration for the minimal CSS framework Purus CSS. For more information, visit the project page on <a href="https://github.com/kaufmann-dev/purus-css">GitHub</a> or visit the <a href="..">website</a>.</p>
+        <p>
+          This page acts as a demonstration for the minimal CSS framework Purus
+          CSS. For more information, visit the project page on
+          <a href="https://github.com/kaufmann-dev/purus-css">GitHub</a> or
+          visit the <a href="..">website</a>.
+        </p>
       </header>
-      <div role="navigation">
+      <section>
         <h1>Navigation</h1>
         <h3>Horizontal navigation</h3>
-        <nav class="border rounded p-nav-lg my-lg">
+        <nav class="border rounded p-nav-lg my-lg" aria-label="Text examples">
           <ul>
             <li>
-              <a href="#text"><button class="important">Text</button></a>
-              <a href="#text__headings"><button>Headings</button></a>
-              <a href="#text__paragraphs"><button>Paragraphs</button></a>
-              <a href="#text__blockquotes"> <button>Blockquotes</button></a>
-              <a href="#text__lists"><button>Lists</button></a>
-              <a href="#text__hr"><button>Horizontal rules</button></a>
-              <a href="#text__tables"><button>Tabular data</button></a>
-              <a href="#text__code"><button>Code</button></a>
-              <a href="#text__inline"><button>Inline elements</button></a>
+              <a class="button important" href="#text">Text</a>
+              <a class="button" href="#text__headings">Headings</a>
+              <a class="button" href="#text__paragraphs">Paragraphs</a>
+              <a class="button" href="#text__blockquotes">Blockquotes</a>
+              <a class="button" href="#text__lists">Lists</a>
+              <a class="button" href="#text__hr">Horizontal rules</a>
+              <a class="button" href="#text__tables">Tabular data</a>
+              <a class="button" href="#text__code">Code</a>
+              <a class="button" href="#text__inline">Inline elements</a>
             </li>
           </ul>
         </nav>
-        <nav>
+        <nav aria-label="Embedded content examples">
           <ul>
-            <li><a href="#embedded"><strong>Embedded content</strong></a> · <a href="#embedded__images">Images</a> · <a href="#embedded__audio">Audio</a> · <a href="#embedded__video">Video</a> · <a href="#embedded__canvas">Canvas</a> · <a href="#embedded__meter">Meter</a> · <a href="#embedded__progress">Progress</a> · <a href="#embedded__svg">Inline SVG</a> · <a href="#embedded__iframe">IFrames</a></li>
-          </ul>
-      </nav>
-        <h3>Vertical navigation</h3>
-        <nav>
-          <ul>
-              <li><a href="#forms"><strong>Form elements</strong></a></li>
-              <li><a href="#forms__input">Input fields</a></li>
-              <li><a href="#forms__select">Select menus</a></li>
-              <li><a href="#forms__checkbox">Checkboxes</a></li>
-              <li><a href="#forms__radio">Radio buttons</a></li>
-              <li><a href="#forms__textareas">Textareas</a></li>
-              <li><a href="#forms__html5">HTML5 inputs</a></li>
-              <li><a href="#forms__action">Action buttons</a></li>
+            <li>
+              <a href="#embedded"><strong>Embedded content</strong></a> ·
+              <a href="#embedded__images">Images</a> ·
+              <a href="#embedded__audio">Audio</a> ·
+              <a href="#embedded__video">Video</a> ·
+              <a href="#embedded__canvas">Canvas</a> ·
+              <a href="#embedded__meter">Meter</a> ·
+              <a href="#embedded__progress">Progress</a> ·
+              <a href="#embedded__svg">Inline SVG</a> ·
+              <a href="#embedded__iframe">IFrames</a>
+            </li>
           </ul>
         </nav>
-      </div>
-      <main role="main">
+        <h3>Vertical navigation</h3>
+        <nav aria-label="Form examples">
+          <ul>
+            <li>
+              <a href="#forms"><strong>Form elements</strong></a>
+            </li>
+            <li><a href="#forms__input">Input fields</a></li>
+            <li><a href="#forms__select">Select menus</a></li>
+            <li><a href="#forms__checkbox">Checkboxes</a></li>
+            <li><a href="#forms__radio">Radio buttons</a></li>
+            <li><a href="#forms__textareas">Textareas</a></li>
+            <li><a href="#forms__html5">HTML5 inputs</a></li>
+            <li><a href="#forms__action">Action buttons</a></li>
+          </ul>
+        </nav>
+      </section>
+      <main>
         <section id="text">
           <h1>Text</h1>
           <article id="text__headings">
-              <h1>Headings</h1>
+            <h1>Headings</h1>
             <div>
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
@@ -66,25 +86,50 @@
               <h5>Heading 5</h5>
               <h6>Heading 6</h6>
             </div>
-            
           </article>
           <article id="text__paragraphs">
             <h1>Paragraphs</h1>
             <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed odio dictum scelerisque vitae quis nisi. Nulla facilisi. Phasellus vehicula convallis nisl, id suscipit dui semper at. In eu iaculis lorem. In vehicula sed mauris et suscipit. Vivamus pellentesque non massa sit amet ornare. Integer placerat est vitae nisl molestie, eget rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                viverra viverra nisl, vel maximus turpis ornare a. Ut
+                scelerisque lectus sed odio dictum scelerisque vitae quis nisi.
+                Nulla facilisi. Phasellus vehicula convallis nisl, id suscipit
+                dui semper at. In eu iaculis lorem. In vehicula sed mauris et
+                suscipit. Vivamus pellentesque non massa sit amet ornare.
+                Integer placerat est vitae nisl molestie, eget rhoncus erat
+                vulputate. Proin ornare massa eget bibendum faucibus.
+              </p>
             </div>
-            
           </article>
           <article id="text__blockquotes">
             <h1>Blockquotes</h1>
             <div>
               <blockquote>
-                <p>Etiam porttitor egestas elit, at venenatis neque accumsan eu. Nulla viverra odio nisi, quis commodo tellus tristique non. Proin ac ante at orci euismod eleifend. Quisque nisi sapien, dapibus in venenatis sit amet, posuere non purus. In sit amet metus erat. Pellentesque nec neque eleifend, luctus ipsum at, ullamcorper nunc. Pellentesque sagittis, dolor eu bibendum lacinia, orci ex bibendum risus, at tincidunt augue lacus eleifend diam. Nulla facilisis velit ut est auctor sollicitudin. Morbi eget lectus a lacus maximus molestie in ut lorem.</p>
-                <p>Vestibulum ut erat sapien. Duis eros est, tempus a rutrum eu, rhoncus at ante. Vestibulum congue vel nunc et dapibus. Ut tristique facilisis orci ac pretium. Nunc et sodales turpis. Nulla pretium augue vitae faucibus tempor. Aliquam convallis mollis feugiat. Ut non pellentesque sem. Suspendisse interdum, neque at hendrerit varius, enim neque imperdiet enim, pellentesque efficitur leo orci non erat.</p>
+                <p>
+                  Etiam porttitor egestas elit, at venenatis neque accumsan eu.
+                  Nulla viverra odio nisi, quis commodo tellus tristique non.
+                  Proin ac ante at orci euismod eleifend. Quisque nisi sapien,
+                  dapibus in venenatis sit amet, posuere non purus. In sit amet
+                  metus erat. Pellentesque nec neque eleifend, luctus ipsum at,
+                  ullamcorper nunc. Pellentesque sagittis, dolor eu bibendum
+                  lacinia, orci ex bibendum risus, at tincidunt augue lacus
+                  eleifend diam. Nulla facilisis velit ut est auctor
+                  sollicitudin. Morbi eget lectus a lacus maximus molestie in ut
+                  lorem.
+                </p>
+                <p>
+                  Vestibulum ut erat sapien. Duis eros est, tempus a rutrum eu,
+                  rhoncus at ante. Vestibulum congue vel nunc et dapibus. Ut
+                  tristique facilisis orci ac pretium. Nunc et sodales turpis.
+                  Nulla pretium augue vitae faucibus tempor. Aliquam convallis
+                  mollis feugiat. Ut non pellentesque sem. Suspendisse interdum,
+                  neque at hendrerit varius, enim neque imperdiet enim,
+                  pellentesque efficitur leo orci non erat.
+                </p>
                 <cite>Said no one, ever.</cite>
               </blockquote>
             </div>
-            
           </article>
           <article id="text__lists">
             <h1>Lists</h1>
@@ -107,19 +152,19 @@
                 <li>List Item 3</li>
               </ul>
             </div>
-            
           </article>
           <article id="text__hr">
             <h1>Horizontal rules</h1>
             <div>
-              <hr>
+              <hr />
             </div>
-            
           </article>
           <article id="text__tables">
             <h1>Tabular data</h1>
             <table>
-              <caption>Table Caption</caption>
+              <caption>
+                Table Caption
+              </caption>
               <thead>
                 <tr>
                   <th>Table Heading 1</th>
@@ -127,13 +172,6 @@
                   <th>Table Heading 3</th>
                 </tr>
               </thead>
-              <tfoot>
-                <tr>
-                  <th>Table Footer 1</th>
-                  <th>Table Footer 2</th>
-                  <th>Table Footer 3</th>
-                </tr>
-              </tfoot>
               <tbody>
                 <tr>
                   <td>Table Cell 1</td>
@@ -156,15 +194,27 @@
                   <td>Table Cell 3</td>
                 </tr>
               </tbody>
+              <tfoot>
+                <tr>
+                  <th>Table Footer 1</th>
+                  <th>Table Footer 2</th>
+                  <th>Table Footer 3</th>
+                </tr>
+              </tfoot>
             </table>
-            
           </article>
           <article id="text__code">
             <h1>Code</h1>
             <div>
               <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
-              <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
-              <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+              <p>
+                <strong>Inline code:</strong>
+                <code>&lt;div&gt;code&lt;/div&gt;</code>
+              </p>
+              <p>
+                <strong>Sample output:</strong>
+                <samp>This is sample output from a computer program.</samp>
+              </p>
               <h2>Pre-formatted text</h2>
               <pre>
 P R E F O R M A T T E D T E X T
@@ -173,33 +223,43 @@ P R E F O R M A T T E D T E X T
 @ A B C D E F G H I J K L M N O
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
-p q r s t u v w x y z { | } ~ </pre>
+p q r s t u v w x y z { | } ~ </pre
+              >
             </div>
-            
           </article>
           <article id="text__inline">
             <h1>Inline elements</h1>
             <div>
-              <a href="#!">This is a text link</a>.<br>
-              <strong>Strong is used to indicate strong importance.</strong><br>
-              <em>This text has added emphasis.</em><br>
-              The <b>b element</b> is stylistically different text from normal text, without any special importance.<br>
-              The <i>i element</i> is text that is offset from the normal text.<br>
-              The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.<br>
-              <del>This text is deleted</del> and <ins>This text is inserted</ins>.<br>
-              <s>This text has a strikethrough</s>.<br>
-              Superscript<sup>®</sup>.<br>
-              Subscript for things like H<sub>2</sub>O.<br>
-              <small>This small text is small for for fine print, etc.</small><br>
-              Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr><br>
-              <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q><br>
-              <cite>This is a citation.</cite><br>
-              The <dfn>dfn element</dfn> indicates a definition.<br>
-              The <mark>mark element</mark> indicates a highlight.<br>
-              The <var>variable element</var>, such as <var>x</var> = <var>y</var>.<br>
-              The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time><br>
+              <a href="#!">This is a text link</a>.<br />
+              <strong>Strong is used to indicate strong importance.</strong
+              ><br />
+              <em>This text has added emphasis.</em><br />
+              The <b>b element</b> is stylistically different text from normal
+              text, without any special importance.<br />
+              The <i>i element</i> is text that is offset from the normal
+              text.<br />
+              The <u>u element</u> is text with an unarticulated, though
+              explicitly rendered, non-textual annotation.<br />
+              <del>This text is deleted</del> and
+              <ins>This text is inserted</ins>.<br />
+              <s>This text has a strikethrough</s>.<br />
+              Superscript<sup>®</sup>.<br />
+              Subscript for things like H<sub>2</sub>O.<br />
+              <small>This small text is small for for fine print, etc.</small
+              ><br />
+              Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr
+              ><br />
+              <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q"
+                >This text is a short inline quotation.</q
+              ><br />
+              <cite>This is a citation.</cite><br />
+              The <dfn>dfn element</dfn> indicates a definition.<br />
+              The <mark>mark element</mark> indicates a highlight.<br />
+              The <var>variable element</var>, such as <var>x</var> =
+              <var>y</var>.<br />
+              The time element:
+              <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time><br />
             </div>
-            
           </article>
         </section>
 
@@ -209,66 +269,92 @@ p q r s t u v w x y z { | } ~ </pre>
             <h2>Images</h2>
             <div>
               <h3>No <code>&lt;figure&gt;</code> element</h3>
-              <img class="rounded" src="../media/1280px-Colouring_pencils.jpg" alt="Colouring pencils by MichaelMaggs">              
-              
-              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+              <img
+                class="rounded"
+                src="../media/1280px-Colouring_pencils.jpg"
+                alt="Colouring pencils by MichaelMaggs"
+              />
+
+              <h3>
+                Wrapped in a <code>&lt;figure&gt;</code> element, no
+                <code>&lt;figcaption&gt;</code>
+              </h3>
               <figure>
-                <img class="rounded" src="../media/1280px-Coloured,_textured_craft_card_edit.jpg" alt="Coloured, textured craft card by MichaelMaggs">
+                <img
+                  class="rounded"
+                  src="../media/1280px-Coloured,_textured_craft_card_edit.jpg"
+                  alt="Coloured, textured craft card by MichaelMaggs"
+                />
               </figure>
-              
-              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+
+              <h3>
+                Wrapped in a <code>&lt;figure&gt;</code> element, with a
+                <code>&lt;figcaption&gt;</code>
+              </h3>
               <figure>
-                <img class="rounded" src="../media/1280px-Opening_chess_position_from_black_side.jpg" alt="Opening chess position from black side by MichaelMaggs">
+                <img
+                  class="rounded"
+                  src="../media/1280px-Opening_chess_position_from_black_side.jpg"
+                  alt="Opening chess position from black side by MichaelMaggs"
+                />
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
             </div>
-            
           </article>
           <article id="embedded__audio">
             <h2>Audio</h2>
             <div>
               <audio controls>
-                <source src="../media/bensound-sunny.mp3">
+                <source src="../media/bensound-sunny.mp3" />
               </audio>
-              <br>
-              <cite>Music: <a href="https://www.bensound.com">https://www.bensound.com</a></cite>
+              <br />
+              <cite
+                >Music:
+                <a href="https://www.bensound.com"
+                  >https://www.bensound.com</a
+                ></cite
+              >
             </div>
-            
           </article>
           <article id="embedded__video">
             <h2>Video</h2>
             <div>
               <video class="rounded" controls>
-                <source src="../media/stock.mp4" type="video/mp4">
+                <source src="../media/stock.mp4" type="video/mp4" />
                 Your browser does not support video/mp4.
               </video>
             </div>
-            
           </article>
           <article id="embedded__canvas">
             <h2>Canvas</h2>
             <div><canvas class="border rounded">canvas</canvas></div>
-            
           </article>
           <article id="embedded__meter">
             <h2>Meter</h2>
             <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-            
           </article>
           <article id="embedded__progress">
             <h2>Progress</h2>
             <div><progress>progress</progress></div>
-            
           </article>
           <article id="embedded__svg">
             <h2>Inline SVG</h2>
-            <div><svg class="border rounded" width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-            
+            <div>
+              <svg class="border rounded" width="100px" height="100px">
+                <circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle>
+              </svg>
+            </div>
           </article>
           <article id="embedded__iframe">
             <h2>IFrame</h2>
-            <div><iframe class="border rounded" src=".." height="300"></iframe></div>
-            
+            <div>
+              <iframe
+                class="border rounded"
+                src=".."
+                height="300"
+                title="Purus CSS website"
+              ></iframe>
+            </div>
           </article>
         </section>
         <section id="forms">
@@ -278,39 +364,74 @@ p q r s t u v w x y z { | } ~ </pre>
               <legend>Input fields</legend>
               <p>
                 <label for="input__text">Text Input</label>
-                <input id="input__text" type="text" placeholder="Text Input">
+                <input id="input__text" type="text" placeholder="Text Input" />
               </p>
               <p>
                 <label for="input__password">Password</label>
-                <input id="input__password" type="password" placeholder="Type your Password">
+                <input
+                  id="input__password"
+                  type="password"
+                  placeholder="Type your Password"
+                  autocomplete="current-password"
+                />
               </p>
               <p>
                 <label for="input__webaddress">Web Address</label>
-                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+                <input
+                  id="input__webaddress"
+                  type="url"
+                  placeholder="http://yoursite.com"
+                />
               </p>
               <p>
                 <label for="input__emailaddress">Email Address</label>
-                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+                <input
+                  id="input__emailaddress"
+                  type="email"
+                  placeholder="name@email.com"
+                />
               </p>
               <p>
                 <label for="input__phone">Phone Number</label>
-                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+                <input
+                  id="input__phone"
+                  type="tel"
+                  placeholder="(999) 999-9999"
+                />
               </p>
               <p>
                 <label for="input__search">Search</label>
-                <input id="input__search" type="search" placeholder="Enter Search Term">
+                <input
+                  id="input__search"
+                  type="search"
+                  placeholder="Enter Search Term"
+                />
               </p>
               <p>
                 <label for="input__text2">Number Input</label>
-                <input id="input__text2" type="number" placeholder="Enter a Number">
+                <input
+                  id="input__text2"
+                  type="number"
+                  placeholder="Enter a Number"
+                />
               </p>
               <p>
                 <label for="input__text3" class="error">Error</label>
-                <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+                <input
+                  id="input__text3"
+                  class="is-error"
+                  type="text"
+                  placeholder="Text Input"
+                />
               </p>
               <p>
                 <label for="input__text4" class="valid">Valid</label>
-                <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+                <input
+                  id="input__text4"
+                  class="is-valid"
+                  type="text"
+                  placeholder="Text Input"
+                />
               </p>
             </fieldset>
             <p></p>
@@ -331,18 +452,69 @@ p q r s t u v w x y z { | } ~ </pre>
             <fieldset id="forms__checkbox">
               <legend>Checkboxes</legend>
               <ul class="list list--bare">
-                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+                <li>
+                  <label
+                    ><input
+                      id="checkbox1"
+                      name="checkbox-a"
+                      type="checkbox"
+                      checked
+                    />
+                    Choice A</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input id="checkbox2" name="checkbox-b" type="checkbox" />
+                    Choice B</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input id="checkbox3" name="checkbox-c" type="checkbox" />
+                    Choice C</label
+                  >
+                </li>
               </ul>
             </fieldset>
             <p></p>
             <fieldset id="forms__radio">
               <legend>Radio buttons</legend>
               <ul class="list list--bare">
-                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
-                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
-                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+                <li>
+                  <label
+                    ><input
+                      id="radio1"
+                      name="radio"
+                      type="radio"
+                      class="radio"
+                      checked
+                    />
+                    Option 1</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      id="radio2"
+                      name="radio"
+                      type="radio"
+                      class="radio"
+                    />
+                    Option 2</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      id="radio3"
+                      name="radio"
+                      type="radio"
+                      class="radio"
+                    />
+                    Option 3</label
+                  >
+                </li>
               </ul>
             </fieldset>
             <p></p>
@@ -350,7 +522,12 @@ p q r s t u v w x y z { | } ~ </pre>
               <legend>Textareas</legend>
               <p>
                 <label for="textarea">Textarea</label>
-                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                <textarea
+                  id="textarea"
+                  rows="8"
+                  cols="48"
+                  placeholder="Enter your message here"
+                ></textarea>
               </p>
             </fieldset>
             <p></p>
@@ -358,50 +535,62 @@ p q r s t u v w x y z { | } ~ </pre>
               <legend>HTML5 inputs</legend>
               <p>
                 <label for="ic">Color input</label>
-                <input type="color" id="ic" value="#000000">
+                <input type="color" id="ic" value="#000000" />
               </p>
               <p>
                 <label for="in">Number input</label>
-                <input type="number" id="in" min="0" max="10" value="5">
+                <input type="number" id="in" min="0" max="10" value="5" />
               </p>
               <p>
                 <label for="ir">Range input</label>
-                <input type="range" id="ir" value="10">
+                <input type="range" id="ir" value="10" />
               </p>
               <p>
                 <label for="idd">Date input</label>
-                <input type="date" id="idd" value="1970-01-01">
+                <input type="date" id="idd" value="1970-01-01" />
               </p>
               <p>
                 <label for="idm">Month input</label>
-                <input type="month" id="idm" value="1970-01">
+                <input type="month" id="idm" value="1970-01" />
               </p>
               <p>
                 <label for="idw">Week input</label>
-                <input type="week" id="idw" value="1970-W01">
+                <input type="week" id="idw" value="1970-W01" />
               </p>
               <p>
-                <label for="idt">Datetime input</label>
-                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+                <label for="idt">Time input</label>
+                <input type="time" id="idt" value="00:00" />
               </p>
               <p>
                 <label for="idtl">Datetime-local input</label>
-                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+                <input
+                  type="datetime-local"
+                  id="idtl"
+                  value="1970-01-01T00:00"
+                />
               </p>
             </fieldset>
             <p></p>
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
-                <input class="mb" type="submit" value="<input type=submit>"><br>
-                <input class="mb" type="button" value="<input type=button>"><br>
-                <input class="mb" type="reset" value="<input type=reset>"><br>
-                <input type="submit" value="<input disabled>" disabled>
+                <a class="button mb" href="#forms__action"
+                  >&lt;a class="button"&gt;</a
+                ><br />
+                <a class="button" aria-disabled="true"
+                  >&lt;a class="button" aria-disabled="true"&gt;</a
+                >
               </p>
               <p>
-                <button class="mb" type="submit">&lt;button type=submit&gt;</button><br>
-                <button class="mb" type="button">&lt;button type=button&gt;</button><br>
-                <button class="mb" type="reset">&lt;button type=reset&gt;</button><br>
+                <button class="mb" type="submit">
+                  &lt;button type=submit&gt;</button
+                ><br />
+                <button class="mb" type="button">
+                  &lt;button type=button&gt;</button
+                ><br />
+                <button class="mb" type="reset">
+                  &lt;button type=reset&gt;</button
+                ><br />
                 <button type="button" disabled>&lt;button disabled&gt;</button>
               </p>
             </fieldset>
@@ -411,10 +600,23 @@ p q r s t u v w x y z { | } ~ </pre>
       </main>
     </div>
 
-    <footer role="contentinfo">
-      <p><a href="https://github.com/kaufmann-dev/purus-css">GitHub</a> · <a href="https://github.com/kaufmann-dev/purus-css/blob/main/LICENSE">License</a> · <a href="https://legal.kaufmann.dev/imprint?site=puruscss.kaufmann.dev">Imprint</a> · <a href="https://legal.kaufmann.dev/privacy?site=puruscss.kaufmann.dev">Privacy</a></p>
+    <footer>
+      <p>
+        <a href="https://github.com/kaufmann-dev/purus-css">GitHub</a> ·
+        <a href="https://github.com/kaufmann-dev/purus-css/blob/main/LICENSE"
+          >License</a
+        >
+        ·
+        <a href="https://legal.kaufmann.dev/imprint?site=puruscss.kaufmann.dev"
+          >Imprint</a
+        >
+        ·
+        <a href="https://legal.kaufmann.dev/privacy?site=puruscss.kaufmann.dev"
+          >Privacy</a
+        >
+      </p>
     </footer>
 
-    <a href="#"><button class="position-fixed bottom-10 right-10">Top</button></a>
+    <a class="button position-fixed bottom-10 right-10" href="#">Top</a>
   </body>
 </html>
