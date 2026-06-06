@@ -21,14 +21,40 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+.site-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.75rem;
+}
+
+.theme-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-control label {
+  line-height: 1.5;
+}
+
+.theme-control select {
+  width: auto;
+  padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+}
+
 .home-header {
   margin: 3.5rem 0 3.25rem;
 }
 
 .home-intro {
   container-type: inline-size;
-  width: min(100%, 15rem);
+  width: min(100%, 22.5rem);
   margin: 0 auto;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--light-background);
+  border: 5px solid var(--white-darkest);
+  background: var(--white-darker);
 }
 
 .site-brand {
