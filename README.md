@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="website/media/apple-touch-icon.png" width="120" alt="Purus CSS logo">
+</p>
+
 # Purus CSS
 
 **Minimalist CSS Framework**
