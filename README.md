@@ -10,7 +10,7 @@
 No JavaScript. Raw CSS.
 ```
 
-14 KB minified.
+15 KB minified.
 
 ## Get Started
 
@@ -40,6 +40,7 @@ Use the minified build from JSDelivr:
   tables, buttons, media, and navigation
 - Customizable through CSS variables
 - Responsive and mobile-friendly
+- Dark mode follows the system preference by default
 - Utilities load last so they consistently override framework defaults
 - Visible keyboard focus and reduced-motion support
 - No JavaScript. Raw CSS.
@@ -119,3 +120,15 @@ Purus CSS:
 ```
 
 Purus CSS does not bundle fonts or make runtime font requests.
+
+## Dark Mode
+
+Purus CSS follows the user's system color scheme by default. Set `data-theme`
+on the root element to explicitly select light or dark mode:
+
+```html
+<html data-theme="dark"></html>
+```
+
+Remove the attribute to return to the system preference. Applications can
+override the light and dark color variables to customize either theme.

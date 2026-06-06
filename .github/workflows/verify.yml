@@ -22,6 +22,7 @@ jobs:
           website/demo/index.html
           website/starter-site/index.html
           website/css/website.css
+          website/js/theme.js
           css/purus.css
           website/fonts/README.md
           .htmlvalidate.json
@@ -43,6 +44,7 @@ jobs:
           test -f website/fonts/atkinson-hyperlegible-next-variable.woff2
           test -f website/fonts/atkinson-hyperlegible-next-variable-italic.woff2
           test -f website/fonts/OFL.txt
+          test -f website/js/theme.js
           ! grep -RE '(@import[^;]*(https?:)?//|url\([^)]*(https?:)?//)' css website/css
           ! grep -RE 'purus\.(classes|drop-in)|class="[^"]*(active|important|outline-none)' website
 
