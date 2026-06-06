@@ -1,0 +1,67 @@
+{
+  "name": "purus-css",
+  "version": "1.0.0",
+  "description": "A class-light, HTML-first CSS foundation.",
+  "license": "MIT",
+  "author": "David Kaufmann",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaufmann-dev/purus-css.git"
+  },
+  "homepage": "https://puruscss.kaufmann.dev/",
+  "bugs": "https://github.com/kaufmann-dev/purus-css/issues",
+  "type": "module",
+  "style": "./dist/purus.css",
+  "exports": {
+    ".": "./dist/purus.css",
+    "./purus.css": "./dist/purus.css",
+    "./purus.min.css": "./dist/purus.min.css"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "npm run clean && node scripts/build.mjs",
+    "dev": "lightningcss --bundle --watch src/purus.css -o dist/purus.css",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:html",
+    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:js": "eslint 'site/**/*.js' 'scripts/**/*.mjs' 'tests/**/*.js'",
+    "lint:html": "html-validate 'site/**/*.html'",
+    "validate:api": "node scripts/validate-api.mjs",
+    "validate:dist": "node scripts/validate-dist.mjs",
+    "validate:package": "node scripts/validate-package.mjs",
+    "size": "node scripts/size.mjs",
+    "test": "playwright test",
+    "ci": "npm run format:check && npm run lint && npm run validate:api && npm run build && npm run validate:dist && npm run validate:package && npm run size && npm test"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "browserslist": [
+    "baseline widely available"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@eslint/js": "^9.28.0",
+    "@playwright/test": "^1.52.0",
+    "browserslist": "^4.28.2",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
+    "html-validate": "^9.7.1",
+    "lightningcss": "^1.32.0",
+    "lightningcss-cli": "^1.29.2",
+    "prettier": "^3.5.3",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}

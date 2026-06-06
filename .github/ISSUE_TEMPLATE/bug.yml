@@ -1,0 +1,16 @@
+name: Bug report
+description: Report a reproducible Purus CSS problem.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the behavior and include minimal semantic HTML.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: true

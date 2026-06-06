@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Purus CSS documentation example." />
+    <link rel="stylesheet" href="../dist/purus.min.css" />
+    <title>Documentation example</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav aria-label="Primary">
+        <ul>
+          <li><strong>Product Docs</strong></li>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#usage">Usage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container sidebar">
+      <aside aria-label="Section navigation">
+        <nav aria-label="Documentation">
+          <ul class="stack">
+            <li><a href="#install">Install</a></li>
+            <li><a href="#usage">Usage</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article class="prose">
+        <h1>Product documentation</h1>
+        <p>A readable documentation layout with a collapsing sidebar.</p>
+        <h2 id="install">Install</h2>
+        <pre><code>npm install product</code></pre>
+        <h2 id="usage">Usage</h2>
+        <p>Import the package and begin.</p>
+        <aside class="callout" aria-label="Example note">
+          This example contains no custom CSS.
+        </aside>
+      </article>
+    </main>
+  </body>
+</html>

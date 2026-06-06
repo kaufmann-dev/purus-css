@@ -1,0 +1,47 @@
+@layer tokens {
+  :root {
+    color-scheme: light dark;
+
+    --color-bg: light-dark(#fafafa, #111);
+    --color-surface: light-dark(#fff, #191919);
+    --color-surface-muted: light-dark(#f1f1f1, #242424);
+    --color-text: light-dark(#171717, #f2f2f2);
+    --color-muted: light-dark(#606060, #aaa);
+    --color-border: light-dark(#d3d3d3, #414141);
+    --color-link: light-dark(#174ea6, #8ab4f8);
+    --color-focus: #1a73e8;
+    --color-error: light-dark(#a61b1b, #ff9b9b);
+    --font-sans: ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, "Cascadia Code", "Roboto Mono", monospace;
+    --text-sm: 0.875rem;
+    --text-lg: clamp(1.125rem, 1rem + 0.35vw, 1.35rem);
+    --text-xl: clamp(2rem, 1.4rem + 2.5vw, 4rem);
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --measure: 68ch;
+    --container: 72rem;
+    --gutter: clamp(1rem, 3vw, 2rem);
+    --radius: 0.35rem;
+    --radius-full: 100vmax;
+    --shadow: 0 0.5rem 2rem light-dark(#00000012, #0005);
+    --focus-ring: 0 0 0 0.2rem var(--color-focus);
+    --stack-space: var(--space-4);
+    --cluster-space: var(--space-3);
+    --grid-min: 16rem;
+    --sidebar-width: 16rem;
+    --sidebar-gap: var(--space-6);
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+  }
+}

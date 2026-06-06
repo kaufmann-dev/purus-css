@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Complete semantic element showcase for Purus CSS."
+    />
+    <link
+      rel="canonical"
+      href="https://puruscss.kaufmann.dev/docs/elements.html"
+    />
+    <link rel="stylesheet" href="../dist/purus.min.css" />
+    <title>Element showcase | Purus CSS</title>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#content">Skip to content</a>
+    <header class="container">
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Purus CSS</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content" class="container stack">
+      <section class="prose">
+        <h1>Element showcase</h1>
+        <p>Representative native elements with no presentational classes.</p>
+        <h2>Typography</h2>
+        <h3>Third-level heading</h3>
+        <h4>Fourth-level heading</h4>
+        <p>
+          A paragraph with <a href="#forms">a link</a>,
+          <strong>strong text</strong>, <em>emphasis</em>,
+          <mark>highlighting</mark>, <del>deleted text</del>,
+          <ins>inserted text</ins>, and <small>small print</small>.
+        </p>
+        <blockquote>
+          <p>Good defaults let the document remain the interface.</p>
+        </blockquote>
+        <ul>
+          <li>Unordered list item</li>
+          <li>Another item</li>
+        </ul>
+        <ol>
+          <li>Ordered list item</li>
+          <li>Another item</li>
+        </ol>
+        <dl>
+          <dt>Semantic HTML</dt>
+          <dd>Markup chosen for meaning, not appearance.</dd>
+        </dl>
+        <p>
+          Press <kbd>Ctrl</kbd> + <kbd>C</kbd>. Inline code looks like
+          <code>color-scheme: light dark</code>.
+        </p>
+        <pre><code>&lt;article class="card"&gt;Clear content&lt;/article&gt;</code></pre>
+      </section>
+      <section class="stack">
+        <h2>Tables and media</h2>
+        <table>
+          <caption>
+            Example values
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Element</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Table</th>
+              <td>Styled</td>
+            </tr>
+            <tr>
+              <th scope="row">Caption</th>
+              <td>Visible</td>
+            </tr>
+          </tbody>
+        </table>
+        <figure>
+          <svg role="img" aria-labelledby="svg-title" viewBox="0 0 640 180">
+            <title id="svg-title">Abstract monochrome rectangles</title>
+            <rect width="640" height="180" fill="currentColor"></rect>
+            <rect
+              x="40"
+              y="40"
+              width="560"
+              height="100"
+              fill="none"
+              stroke="Canvas"
+              stroke-width="3"
+            ></rect>
+          </svg>
+          <figcaption>Responsive inline SVG with a caption.</figcaption>
+        </figure>
+      </section>
+      <section class="prose">
+        <h2>Disclosure and status</h2>
+        <details>
+          <summary>Read more</summary>
+          <p>Details remain keyboard accessible without JavaScript.</p>
+        </details>
+        <label for="progress">Progress</label
+        ><progress id="progress" max="100" value="72">72%</progress>
+        <label for="meter">Quality</label
+        ><meter
+          id="meter"
+          min="0"
+          max="10"
+          low="3"
+          high="8"
+          optimum="9"
+          value="8"
+        >
+          8 out of 10
+        </meter>
+      </section>
+      <section id="forms" class="prose">
+        <h2>Forms</h2>
+        <form class="stack">
+          <label for="name">Name</label
+          ><input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Ada Lovelace"
+            required
+          />
+          <label for="email">Email</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="ada@example.com"
+            required
+          />
+          <label for="topic">Topic</label
+          ><select id="topic" name="topic">
+            <option>Semantic HTML</option>
+            <option>Layouts</option>
+          </select>
+          <label for="message">Message</label
+          ><textarea id="message" name="message" rows="4"></textarea>
+          <label><input type="checkbox" name="updates" /> Send updates</label>
+          <fieldset>
+            <legend>Preferred theme</legend>
+            <label
+              ><input type="radio" name="theme" value="system" checked />
+              System</label
+            >
+            <label><input type="radio" name="theme" value="dark" /> Dark</label>
+          </fieldset>
+          <div class="cluster">
+            <button type="submit">Submit</button
+            ><button type="button" disabled>Disabled</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="../assets/site.js" defer></script>
+  </body>
+</html>

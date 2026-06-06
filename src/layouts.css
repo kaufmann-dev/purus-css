@@ -1,0 +1,58 @@
+@layer layouts {
+  .container {
+    inline-size: min(100% - 2 * var(--gutter), var(--container));
+    margin-inline: auto;
+  }
+
+  .prose {
+    max-inline-size: var(--measure);
+  }
+
+  .prose > * + * {
+    margin-block-start: var(--space-4);
+  }
+
+  .prose > :where(h2, h3) {
+    margin-block-start: var(--space-7);
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--stack-space);
+  }
+
+  .cluster {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--cluster-space);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(100%, var(--grid-min)), 1fr)
+    );
+    gap: var(--space-5);
+  }
+
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sidebar-gap);
+  }
+
+  .sidebar > :first-child {
+    flex-basis: var(--sidebar-width);
+    flex-grow: 1;
+  }
+
+  .sidebar > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: min(100%, 50%);
+  }
+}

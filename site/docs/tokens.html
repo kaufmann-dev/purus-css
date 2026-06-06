@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Purus CSS token reference." />
+    <link
+      rel="canonical"
+      href="https://puruscss.kaufmann.dev/docs/tokens.html"
+    />
+    <link rel="stylesheet" href="../dist/purus.min.css" />
+    <title>Token reference | Purus CSS</title>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#content">Skip to content</a>
+    <header class="container">
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Purus CSS</a></li>
+          <li><a href="classes.html">Classes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content" class="container prose">
+      <h1>Token reference</h1>
+      <p>
+        Override semantic tokens after importing Purus CSS. Preserve their
+        meaning across themes.
+      </p>
+      <table>
+        <caption>
+          Supported token groups
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Group</th>
+            <th scope="col">Tokens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Color</th>
+            <td>
+              <code>--color-bg</code>, <code>--color-surface</code>,
+              <code>--color-surface-muted</code>, <code>--color-text</code>,
+              <code>--color-muted</code>, <code>--color-border</code>,
+              <code>--color-link</code>, <code>--color-focus</code>,
+              <code>--color-error</code>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Type</th>
+            <td>
+              <code>--font-sans</code>, <code>--font-mono</code>,
+              <code>--text-sm</code>, <code>--text-lg</code>,
+              <code>--text-xl</code>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Space</th>
+            <td>
+              <code>--space-1</code> through <code>--space-7</code>,
+              <code>--gutter</code>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Shape</th>
+            <td>
+              <code>--radius</code>, <code>--radius-full</code>,
+              <code>--shadow</code>, <code>--focus-ring</code>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Layout</th>
+            <td>
+              <code>--measure</code>, <code>--container</code>,
+              <code>--stack-space</code>, <code>--cluster-space</code>,
+              <code>--grid-min</code>, <code>--sidebar-width</code>,
+              <code>--sidebar-gap</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Themes</h2>
+      <p>
+        The default follows the system preference. Set
+        <code>data-theme="light"</code> or <code>data-theme="dark"</code> on
+        <code>html</code> for an explicit theme.
+      </p>
+    </main>
+    <script src="../assets/site.js" defer></script>
+  </body>
+</html>

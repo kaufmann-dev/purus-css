@@ -1,0 +1,6 @@
+{
+  "dist/purus.min.css": {
+    "maxBytes": 16384,
+    "maxGzipBytes": 5120
+  }
+}

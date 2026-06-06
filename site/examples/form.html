@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Purus CSS form example." />
+    <link rel="stylesheet" href="../dist/purus.min.css" />
+    <title>Form example</title>
+  </head>
+  <body>
+    <main class="container">
+      <form class="card stack">
+        <h1>Contact us</h1>
+        <p>All fields are required.</p>
+        <label for="full-name">Full name</label
+        ><input
+          id="full-name"
+          name="full-name"
+          type="text"
+          autocomplete="name"
+          required
+        /><label for="contact-email">Email</label
+        ><input
+          id="contact-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        /><label for="request">Request</label
+        ><textarea id="request" name="request" rows="5" required></textarea
+        ><label><input type="checkbox" name="copy" /> Email me a copy</label
+        ><button type="submit">Send request</button>
+      </form>
+    </main>
+  </body>
+</html>

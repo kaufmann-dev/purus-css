@@ -1,0 +1,14 @@
+# Purus CSS
+
+Purus CSS is a class-light, HTML-first CSS foundation. Prefer semantic HTML and native elements before adding classes.
+
+Supported classes: container, prose, stack, cluster, grid, sidebar, card, button, badge, callout, visually-hidden.
+
+Supported themes: data-theme="light" and data-theme="dark"; no attribute follows the system preference.
+
+Use semantic tokens documented at https://puruscss.kaufmann.dev/docs/tokens.html. Do not invent classes, utility classes, modifiers, responsive variants, aliases, or undocumented selectors.
+
+Copy-paste examples: https://puruscss.kaufmann.dev/examples/
+Class reference: https://puruscss.kaufmann.dev/docs/classes.html
+Element reference: https://puruscss.kaufmann.dev/docs/elements.html
+Accessibility: https://puruscss.kaufmann.dev/docs/accessibility.html

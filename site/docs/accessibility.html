@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Accessibility guidance for Purus CSS." />
+    <link
+      rel="canonical"
+      href="https://puruscss.kaufmann.dev/docs/accessibility.html"
+    />
+    <link rel="stylesheet" href="../dist/purus.min.css" />
+    <title>Accessibility | Purus CSS</title>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#content">Skip to content</a>
+    <header class="container">
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Purus CSS</a></li>
+          <li><a href="elements.html">Elements</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content" class="container prose">
+      <h1>Accessibility</h1>
+      <p>
+        Purus CSS provides visible keyboard focus, WCAG AA color contrast,
+        reduced-motion behavior, forced-colors support, clear disabled states,
+        and restrained validation styling.
+      </p>
+      <h2>Your responsibility</h2>
+      <p>
+        Use correct landmarks, heading order, labels, alternative text, and
+        native controls. CSS cannot repair incorrect HTML semantics.
+      </p>
+      <aside class="callout">
+        Never remove focus indicators. Use <code>.visually-hidden</code> for
+        skip links and labels that must remain available to assistive
+        technology.
+      </aside>
+    </main>
+    <script src="../assets/site.js" defer></script>
+  </body>
+</html>

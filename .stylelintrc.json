@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "selector-class-pattern": "^(container|prose|stack|cluster|grid|sidebar|card|button|badge|callout|visually-hidden)$",
+    "declaration-no-important": true,
+    "property-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true
+  }
+}

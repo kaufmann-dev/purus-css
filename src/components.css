@@ -1,0 +1,57 @@
+@layer components {
+  :where(button, .button) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: fit-content;
+    border: 1px solid var(--color-text);
+    border-radius: var(--radius);
+    background: var(--color-text);
+    color: var(--color-bg);
+    padding: 0.55rem 0.9rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  :where(button, .button):hover {
+    opacity: 0.82;
+  }
+
+  .card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    box-shadow: var(--shadow);
+    padding: var(--space-5);
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    background: var(--color-surface-muted);
+    padding: 0.1rem 0.55rem;
+    font-size: var(--text-sm);
+    font-weight: 700;
+  }
+
+  .callout {
+    border: 1px solid var(--color-border);
+    border-inline-start: 0.3rem solid var(--color-link);
+    border-radius: var(--radius);
+    background: var(--color-surface-muted);
+    padding: var(--space-5);
+  }
+
+  .visually-hidden:not(:focus, :active) {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

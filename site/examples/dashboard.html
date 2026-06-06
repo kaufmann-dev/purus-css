@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Purus CSS dashboard example." />
+    <link rel="stylesheet" href="../dist/purus.min.css" />
+    <title>Dashboard example</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav aria-label="Primary">
+        <ul>
+          <li><strong>Overview</strong></li>
+          <li><a href="#activity">Activity</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container stack">
+      <div class="cluster">
+        <h1>Dashboard</h1>
+        <span class="badge">All systems normal</span>
+      </div>
+      <section class="grid" aria-label="Metrics">
+        <article class="card stack">
+          <h2>Revenue</h2>
+          <strong>$48,220</strong><small>Up 12% this month</small>
+        </article>
+        <article class="card stack">
+          <h2>Orders</h2>
+          <strong>1,284</strong><small>Up 8% this month</small>
+        </article>
+        <article class="card stack">
+          <h2>Conversion</h2>
+          <strong>4.8%</strong><small>Up 0.6 points</small>
+        </article>
+      </section>
+      <section id="activity" class="stack">
+        <h2>Recent activity</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Event</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Deployment</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>Data import</td>
+              <td>Complete</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

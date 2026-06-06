@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Purus CSS is a class-light, HTML-first CSS foundation."
+    />
+    <meta property="og:title" content="Purus CSS" />
+    <meta
+      property="og:description"
+      content="Semantic HTML, made presentable."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://puruscss.kaufmann.dev/" />
+    <link rel="canonical" href="https://puruscss.kaufmann.dev/" />
+    <link rel="stylesheet" href="dist/purus.min.css" />
+    <title>Purus CSS</title>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#content">Skip to content</a>
+    <header class="container">
+      <nav aria-label="Primary">
+        <ul>
+          <li><strong>Purus CSS</strong></li>
+          <li><a href="docs/getting-started.html">Get started</a></li>
+          <li><a href="docs/elements.html">Elements</a></li>
+          <li><a href="docs/classes.html">Classes</a></li>
+          <li><a href="docs/tokens.html">Tokens</a></li>
+          <li><a href="examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content" class="container stack">
+      <section class="prose stack">
+        <span class="badge">1.0.0</span>
+        <h1>Semantic HTML, made presentable.</h1>
+        <p>
+          Purus CSS is a class-light, HTML-first foundation for sites that value
+          clarity, accessibility, and a small public API.
+        </p>
+        <div class="cluster">
+          <a class="button" href="docs/getting-started.html">Get started</a>
+          <a href="https://github.com/kaufmann-dev/purus-css">View on GitHub</a>
+        </div>
+      </section>
+      <section class="grid" aria-labelledby="principles">
+        <h2 id="principles" class="visually-hidden">Principles</h2>
+        <article class="card stack">
+          <h3>HTML first</h3>
+          <p>
+            Native elements receive polished defaults without requiring
+            presentational classes.
+          </p>
+        </article>
+        <article class="card stack">
+          <h3>Eleven classes</h3>
+          <p>
+            A deliberately small API covers reusable layouts and components
+            without utilities.
+          </p>
+        </article>
+        <article class="card stack">
+          <h3>Accessible defaults</h3>
+          <p>
+            Clear focus, contrast, validation, motion, and forced-color behavior
+            are built in.
+          </p>
+        </article>
+      </section>
+      <aside class="callout stack">
+        <h2>Start with one link</h2>
+        <pre
+          tabindex="0"
+        ><code id="cdn-snippet">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purus-css@1.0.0/dist/purus.min.css"&gt;</code></pre>
+        <button type="button" data-copy="#cdn-snippet">Copy CDN link</button>
+      </aside>
+    </main>
+    <footer class="container">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="docs/accessibility.html">Accessibility</a></li>
+          <li><a href="docs/browser-support.html">Browser support</a></li>
+          <li>
+            <a
+              href="https://github.com/kaufmann-dev/purus-css/blob/main/LICENSE"
+              >MIT License</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button type="button" data-theme-toggle>Toggle theme</button>
+    </footer>
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>
