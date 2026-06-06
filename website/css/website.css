@@ -21,39 +21,71 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+.home-header {
+  margin: 3.5rem 0 3.25rem;
+}
+
+.home-intro {
+  container-type: inline-size;
+  width: min(100%, 15rem);
+  margin: 0 auto;
+}
+
 .site-brand {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin: 50px 0 40px;
+  gap: 0.625rem;
 }
 
 .site-brand h1 {
   margin: 0;
-  font-size: clamp(3.5rem, 14vw, 6rem);
-  font-weight: 500;
+  color: var(--black);
+  font-size: 17.8cqi;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1;
-}
-
-.site-brand h1 span {
-  color: var(--primary);
-  font-weight: 700;
+  white-space: nowrap;
 }
 
 .site-logo {
-  width: clamp(4.5rem, 18vw, 7rem);
+  width: 15.5cqi;
   height: auto;
 }
 
+.home-tagline {
+  margin: 1rem 0 0;
+  font-size: 8.23cqi;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.home-meta {
+  margin: 0.25rem 0 0;
+  color: var(--grey-text);
+  font-size: 5.69cqi;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.home-resources {
+  margin-top: 1rem;
+  font-size: 6.15cqi;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.home-resources li {
+  display: inline;
+}
+
 @media (max-width: 30rem) {
-  .site-brand {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin: 40px 0 32px;
+  .home-header {
+    margin: 2.25rem 0 2.5rem;
   }
 
-  .site-brand h1 {
-    font-size: 3.5rem;
+  .home-tagline {
+    margin-top: 0.875rem;
   }
 }

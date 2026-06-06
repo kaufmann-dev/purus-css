@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="website/media/apple-touch-icon.png" width="120" alt="Purus CSS logo">
+  <img src="website/media/logo.svg" width="120" alt="Purus CSS logo">
 </p>
 
 # Purus CSS
@@ -10,7 +10,7 @@
 No JavaScript. Raw CSS.
 ```
 
-13.8 KB minified.
+14 KB minified.
 
 ## Get Started
 

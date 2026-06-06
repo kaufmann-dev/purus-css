@@ -48,7 +48,7 @@ jobs:
 
       - name: Verify displayed size
         run: |
-          size="$(wc -c < css/purus.min.css | awk '{ printf "%.1f KB", $1 / 1024 }')"
+          size="$(wc -c < css/purus.min.css | awk '{ printf "%.0f KB", $1 / 1024 }')"
           grep -Fq "$size minified" README.md
           grep -Fq "$size minified" website/index.html
           grep -Fq "$size minified" website/demo/index.html
