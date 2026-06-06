@@ -11,16 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify complete CSS composition
-        run: |
-          mkdir -p tmp
-          {
-            cat css/purus.classes.css
-            printf '\n'
-            sed -n '/^\/\*! DROP-IN CSS \*\//,$p' css/purus.drop-in.css
-          } > tmp/purus.css
-          diff -u css/purus.css tmp/purus.css
-
       - name: Validate HTML
         run: npx --yes html-validate@11.5.2 'website/**/*.html' 'website/*.html'
 
@@ -33,20 +23,36 @@ jobs:
           website/starter-site/index.html
           website/css/website.css
           css/purus.css
-          css/purus.classes.css
-          css/purus.drop-in.css
+          website/fonts/README.md
           .htmlvalidate.json
           .github/workflows/verify.yml
 
       - name: Verify minified CSS
         run: |
           mkdir -p tmp/minified
-          for source in css/purus.css css/purus.classes.css css/purus.drop-in.css; do
-            output="tmp/minified/$(basename "${source%.css}.min.css")"
-            npx --yes @parcel/css-cli@1.13.1 --minify --output-file "$output" "$source"
-            diff -u "${source%.css}.min.css" "$output"
-          done
+          npx --yes @parcel/css-cli@1.13.1 --minify --output-file tmp/minified/purus.min.css css/purus.css
+          diff -u css/purus.min.css tmp/minified/purus.min.css
           diff -u css/purus.min.css website/css/purus.min.css
+
+      - name: Verify single artifact and local resources
+        run: |
+          test ! -e css/purus.classes.css
+          test ! -e css/purus.classes.min.css
+          test ! -e css/purus.drop-in.css
+          test ! -e css/purus.drop-in.min.css
+          test -f website/fonts/atkinson-hyperlegible-next-variable.woff2
+          test -f website/fonts/atkinson-hyperlegible-next-variable-italic.woff2
+          test -f website/fonts/OFL.txt
+          ! grep -RE '(@import[^;]*(https?:)?//|url\([^)]*(https?:)?//)' css website/css
+          ! grep -RE 'purus\.(classes|drop-in)|class="[^"]*(active|important|outline-none)' website
+
+      - name: Verify displayed size
+        run: |
+          size="$(wc -c < css/purus.min.css | awk '{ printf "%.1f KB", $1 / 1024 }')"
+          grep -Fq "$size minified" README.md
+          grep -Fq "$size minified" website/index.html
+          grep -Fq "$size minified" website/demo/index.html
+          grep -Fq "$size minified" website/starter-site/index.html
 
       - name: Verify project slogan
         run: |
