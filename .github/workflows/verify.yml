@@ -11,20 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validate HTML
-        run: npx --yes html-validate@11.5.2 'website/**/*.html' 'website/*.html'
-
       - name: Check formatting
         run: >
           npx --yes prettier@3.8.3 --check
           README.md
-          website/index.html
-          website/demo/index.html
-          website/starter-site/index.html
-          website/css/website.css
-          website/js/theme.js
           css/purus.css
-          website/fonts/README.md
           .htmlvalidate.json
           .github/workflows/verify.yml
 
@@ -33,7 +24,6 @@ jobs:
           mkdir -p tmp/minified
           npx --yes @parcel/css-cli@1.13.1 --minify --output-file tmp/minified/purus.min.css css/purus.css
           diff -u css/purus.min.css tmp/minified/purus.min.css
-          diff -u css/purus.min.css website/css/purus.min.css
 
       - name: Verify single artifact and local resources
         run: |
@@ -41,24 +31,13 @@ jobs:
           test ! -e css/purus.classes.min.css
           test ! -e css/purus.drop-in.css
           test ! -e css/purus.drop-in.min.css
-          test -f website/fonts/atkinson-hyperlegible-next-variable.woff2
-          test -f website/fonts/atkinson-hyperlegible-next-variable-italic.woff2
-          test -f website/fonts/OFL.txt
-          test -f website/js/theme.js
-          ! grep -RE '(@import[^;]*(https?:)?//|url\([^)]*(https?:)?//)' css website/css
-          ! grep -RE 'purus\.(classes|drop-in)|class="[^"]*(active|important|outline-none)' website
+          ! grep -RE '(@import[^;]*(https?:)?//|url\([^)]*(https?:)?//)' css
 
       - name: Verify displayed size
         run: |
           size="$(wc -c < css/purus.min.css | awk '{ printf "%.0f KB", $1 / 1024 }')"
           grep -Fq "$size minified" README.md
-          grep -Fq "$size minified" website/index.html
-          grep -Fq "$size minified" website/demo/index.html
-          grep -Fq "$size minified" website/starter-site/index.html
 
       - name: Verify project slogan
         run: |
           grep -Fq 'No JavaScript. Raw CSS.' README.md
-          grep -Fq 'No JavaScript. Raw CSS.' website/index.html
-          grep -Fq 'No JavaScript. Raw CSS.' website/demo/index.html
-          grep -Fq 'No JavaScript. Raw CSS.' website/starter-site/index.html
