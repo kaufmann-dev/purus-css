@@ -16,7 +16,6 @@ jobs:
           npx --yes prettier@3.8.3 --check
           README.md
           css/purus.css
-          .htmlvalidate.json
           .github/workflows/verify.yml
 
       - name: Verify minified CSS
