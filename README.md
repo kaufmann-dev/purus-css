@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="website/media/logo.svg" width="120" alt="Purus CSS logo">
+  <img src="https://puruscss.kaufmann.dev/media/logo.svg" width="120" alt="Purus CSS logo">
 </p>
 
 # Purus CSS
