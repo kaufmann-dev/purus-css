@@ -6,7 +6,7 @@
 No JavaScript. Raw CSS.
 ```
 
-15 KB minified.
+13 KB minified.
 
 ## Get Started
 
@@ -95,7 +95,8 @@ Load overrides after Purus CSS:
 :root {
   --primary: #7253ed;
   --primary-hover: #6242d5;
-  --padding: 0.5rem;
+  --radius: 0.5rem;
+  --padding: 0.75rem;
 }
 ```
 
