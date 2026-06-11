@@ -6,7 +6,7 @@
 No JavaScript. Raw CSS.
 ```
 
-14 KB minified.
+15 KB minified.
 
 ## Get Started
 
@@ -48,7 +48,7 @@ Use semantic HTML for the default styles and add utilities where needed:
 ```html
 <main class="container">
   <h1>Purus CSS</h1>
-  <p class="color-grey-text">A small, complete CSS framework.</p>
+  <p class="color-text-muted">A small, complete CSS framework.</p>
   <a class="button" href="/download">Download</a>
 </main>
 ```
@@ -65,8 +65,10 @@ Use `.button` when a link should look like a button. Use
 
 ## Core Class Reference
 
-- Layout: `.container`, `.container-fluid`, `.fill-vertical-space`
+- Layout: `.container`, `.container-fluid`, `.fill-vertical-space`,
+  `.list-none`
 - Accessibility and visibility: `.visually-hidden`, `.visible`, `.invisible`
+- Form states: `.is-error`, `.is-valid`
 - Sizing: `.h-25`, `.h-50`, `.h-75`, `.h-100`, `.h-auto`, `.h-content`,
   `.w-25`, `.w-50`, `.w-75`, `.w-100`, `.w-auto`, `.w-content`
 - Spacing: `.p`, `.px`, `.py`, `.pl`, `.pr`, `.pt`, `.pb`, `.p-lg`,
