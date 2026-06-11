@@ -11,7 +11,9 @@
   --primary-hover: light-dark(#1d4ed8, #b3c8fd);
   --primary-focus: light-dark(rgba(37, 99, 235, 0.3), rgba(143, 176, 251, 0.4));
   --error: light-dark(#dc2626, #f87171);
+  --error-focus: light-dark(rgba(220, 38, 38, 0.25), rgba(248, 113, 113, 0.4));
   --valid: light-dark(#16a34a, #4ade80);
+  --valid-focus: light-dark(rgba(22, 163, 74, 0.25), rgba(74, 222, 128, 0.4));
   --control-border: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.22));
   --control-text: light-dark(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.88));
   --control-disabled-bg: light-dark(
@@ -376,8 +378,14 @@ textarea {
 :is(input, select, textarea):is(.is-error, .is-error:focus) {
   border-color: var(--error);
 }
+:is(input, select, textarea).is-error:focus {
+  box-shadow: 0 0 0 0.2rem var(--error-focus);
+}
 :is(input, select, textarea):is(.is-valid, .is-valid:focus) {
   border-color: var(--valid);
+}
+:is(input, select, textarea).is-valid:focus {
+  box-shadow: 0 0 0 0.2rem var(--valid-focus);
 }
 
 /* Checkboxes, Radios, and Native Widgets */
